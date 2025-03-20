@@ -1348,7 +1348,7 @@ label {
 	05. Banner
 ===============================*/
 .banner-bg {
-  background-image: url(/public/img/banner/banner_bg.jpg);
+  background-image: url(/public/img/banner/hero-bg.png);
   background-size: cover;
   background-position: center;
   padding: 220px 0 120px;
