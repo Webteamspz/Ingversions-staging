@@ -1,6 +1,6 @@
 {
-  "short_name": "Ingversions",
-  "name": "Ingversions",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "/public/img/favicon.png",
