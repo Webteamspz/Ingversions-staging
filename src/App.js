@@ -6,11 +6,11 @@ import CreativeAgency from "./pages/Home/CreativeAgency";
 // import DigitalAgency from "./pages/Home/DigitalAgency";
 // import AboutUs from "./pages/About/AboutUs";
 // import AboutMe from "./pages/About/AboutMe";
-// import TeamPage from "./pages/Team/TeamPage";
+import TeamPage from "./pages/Team/TeamPage";
 // import TeamPageDetails from "./pages/Team/TeamPageDetails";
 // import PortfolioDetailsPage from "./pages/PortfolioDetailsPage";
 // import ServicesDetailsPage from "./pages/ServicesDetailsPage";
-import ContactPage from "./pages/ContactPage";
+// import ContactPage from "./pages/ContactPage";
 // import BlogPage from "./pages/Blog/BlogPage";
 // import BlogDetailsPage from "./pages/Blog/BlogDetailsPage";
 import AnimatedCursor from "react-animated-cursor";
@@ -62,12 +62,12 @@ function App() {
        {/* <Route path="/home-two" element={<PersonalPortfolio />} />
         <Route path="/home-three" element={<DigitalAgency />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/about-me" element={<AboutMe />} />*/
         <Route path="/team" element={<TeamPage />} />
-        <Route path="/team-details" element={<TeamPageDetails />} />
-        <Route path="/project-details" element={<PortfolioDetailsPage />} />
+       /* <Route path="/team-details" element={<TeamPageDetails />} />*/
+        /*<Route path="/project-details" element={<PortfolioDetailsPage />} />
         <Route path="/services-details" element={<ServicesDetailsPage />} />*/}
-        <Route path="/contact" element={<ContactPage />} />
+        {/* <Route path="/contact" element={<ContactPage />} /> */}
         {/* <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog-details" element={<BlogDetailsPage />} /> */}
       </Routes>

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import $ from "jquery";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import headerData from "../componentsConfig.json";
-// import cn from "classnames";
+import cn from "classnames";
 
 const HeaderOne = () => {
   useEffect(() => {
@@ -68,12 +68,17 @@ const HeaderOne = () => {
     });
   }, []);
 
-  // const { pathname } = useLocation();
+  const { pathname } = useLocation();
   const header = headerData;
 
-  // const isActiveClassName = (path) => {
-  //   return path === pathname ? "active" : "";
-  // };
+  const isActiveClassName = (path) => {
+    return path === pathname ? "active" : "";
+  };
+
+  // Filter navigation items to only include "Home" and "Pages"
+  const filteredNavItems = header.navigation.filter((navItem) =>
+    ["Home", "Pages"].includes(navItem.label)
+  );
 
   return (
     <>
@@ -97,36 +102,33 @@ const HeaderOne = () => {
 
                     {/* Navigation */}
                     <div className="navbar-wrap main-menu d-none d-lg-flex">
-                      {/*<ul className="navigation">
-                        {header.navigation.map((navItem, index) => (
+                      <ul className="navigation">
+                        {filteredNavItems.map((navItem, index) => (
                           <li
                             key={index}
                             className={cn(
-                              navItem.subMenu.length > 0 &&
+                              navItem.label === "Pages" &&
                                 "menu-item-has-children",
-                              navItem.link === pathname && "active"
+                              isActiveClassName(
+                                navItem.label === "Home" ? "/" : navItem.link
+                              )
                             )}
                           >
-                            <Link to={navItem.link}>{navItem.label}</Link>
-                            {navItem.subMenu.length > 0 && (
+                            <Link
+                              to={navItem.label === "Home" ? "/" : navItem.link}
+                            >
+                              {navItem.label}
+                            </Link>
+                            {navItem.label === "Pages" && (
                               <ul className="sub-menu">
-                                {navItem.subMenu.map((subItem, subIndex) => (
-                                  <li
-                                    key={subIndex}
-                                    className={cn(
-                                      isActiveClassName(subItem.link)
-                                    )}
-                                  >
-                                    <Link to={subItem.link}>
-                                      {subItem.label}
-                                    </Link>
-                                  </li>
-                                ))}
+                                <li className={cn(isActiveClassName("/team"))}>
+                                  <Link to="/team">Team Page</Link>
+                                </li>
                               </ul>
                             )}
                           </li>
                         ))}
-                      </ul>*/}
+                      </ul>
                     </div>
 
                     {/* CTA Button */}

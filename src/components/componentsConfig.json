@@ -75,7 +75,7 @@
     }
   ],
   "ctaButton": {
-    "text": "Contact",
+    "text": "Book a Call",
     "link": "https://calendly.com/ingversionsdigital/30min?month=2025-02",
     "classes": "btn"
   },
@@ -184,7 +184,7 @@
         "animationDelay": ".4s"
       },
       "ctaButton": {
-        "text": "Contact Us",
+        "text": "Book a Call",
         "link": "https://calendly.com/ingversionsdigital/30min?month=2025-02",
         "buttonClass": "btn wow fadeInUp",
         "animationDelay": ".6s"

@@ -244,6 +244,7 @@ img,
 .popup-text li {
   font-size: 14px;
   color: white;
+  margin-left: 15px;
 }
 
 /* Close button styling */
@@ -581,6 +582,8 @@ label {
 .navbar-wrap {
   display: flex;
   flex-grow: 1;
+  margin-right: 75px;
+  height: 75px;
 }
 .navbar-wrap ul {
   display: flex;
@@ -588,6 +591,7 @@ label {
   flex-wrap: wrap;
   padding: 0 0;
   margin: 0 0 0 auto;
+  gap: 20px;
 }
 .navbar-wrap ul li {
   list-style: none;
@@ -607,7 +611,8 @@ label {
 }
 .navbar-wrap > ul > li.active > a,
 .navbar-wrap > ul > li:hover > a {
-  color: var(--tg-primary-color);
+  /* color: var(--tg-primary-color); */
+  color: var(--tg-menu-color);
 }
 .navbar-wrap > ul > li.menu-item-has-children > a::after {
   content: "\f078";
@@ -716,7 +721,7 @@ label {
   border-radius: 0;
 }
 .sticky-menu.menu-area {
-  padding: 5px 0;
+  padding: 2px 0;
 }
 .sticky-menu .navbar-wrap ul li .sub-menu {
   border-radius: 0 0 15px 15px;
@@ -1347,14 +1352,25 @@ label {
 /*=============================
 	05. Banner
 ===============================*/
-.banner-bg {
+.banner-bg { 
   background-image: url(/public/img/banner/hero-bg.png);
   background-size: cover;
   background-position: center;
   padding: 220px 0 120px;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   /* background: rgba(23,28,59,255); */
+  /* Add the hue rotate animation */
+  animation: hueRotate 20s linear infinite;
+}
+
+@keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 .banner-area .row {
   justify-content: center;
@@ -6139,14 +6155,14 @@ label {
   justify-content: center;
   border-radius: 10px;
   /* color: var(--tg-silver); */
-  color: #f89e52;
+  color: #4616A3;
   font-size: 14px;
-  border: 2px solid #272531;
+  border: 2px solid #F50569;
 }
-.footer-social .list-wrap li a:hover {
+/* .footer-social .list-wrap li a:hover {
   color: var(--tg-secondary-color);
   border-color: var(--tg-secondary-color);
-}
+} */
 .footer-contact span {
   display: block;
   /* color: var(--tg-silver); */
@@ -6567,21 +6583,53 @@ label {
   background-color: #fff;
 }
 
+/* Text styling, adjust as needed */
 .company-logos-text {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-.company-logos-list {
-  display: flex;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
-  justify-content: center; /* Center the logos in the row */
-  gap: 40px; /* Space between logos */
+/* The marquee wrapper */
+.marquee {
+  /* Hide any overflow from the container */
+  overflow: hidden;
+  width: 100%;
+  /* Optional: add some top/bottom spacing if you like */
+  padding: 1rem 0;
 }
 
-.company-logos-list img {
-  max-height: 40px; /* Adjust as desired */
-  object-fit: contain;
-  display: block;
+/* This is the moving container that holds all logos */
+.marquee__group {
+  display: inline-flex;         /* Place images side by side */
+  width: max-content;           /* Let it expand as wide as needed */
+  animation: scroll-left 200s linear infinite;
+  /* 
+    "20s" is the duration of one full scroll.
+    Increase it to slow down the scroll, decrease it to speed it up.
+  */
 }
+
+/* Make sure the logos are side by side, not stacked */
+.marquee__group img {
+  display: inline-block;
+  margin-right: 2rem; /* spacing between logos */
+  height: 40px;       /* example logo height, adjust as needed */
+  /* you can set width: auto; or a fixed width if needed */
+}
+
+/* Keyframes for infinite scrolling to the left */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* 
+      We translate by 50% of the total group width if we 
+      duplicated the images exactly twice. 
+      If you have many logos, 50% is perfect for a repeat. 
+      The effect is that the second set lines up exactly at the end of the first set.
+    */
+    transform: translateX(-50%);
+  }
+}
+
