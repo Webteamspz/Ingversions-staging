@@ -75,10 +75,13 @@ const HeaderOne = () => {
     return path === pathname ? "active" : "";
   };
 
-  // Filter navigation items to only include "Home" and "Pages"
-  const filteredNavItems = header.navigation.filter((navItem) =>
-    ["Home", "Pages"].includes(navItem.label)
-  );
+ // Instead of filtering for "Home" and "Pages", let's create a simplified array
+  // that has exactly what we want: "Home" and "Team Page".
+  const navItems = [
+    { label: "Home", link: "/" },
+    { label: "Team Page", link: "/team" },
+  ];
+
 
   return (
     <>
@@ -103,29 +106,16 @@ const HeaderOne = () => {
                     {/* Navigation */}
                     <div className="navbar-wrap main-menu d-none d-lg-flex">
                       <ul className="navigation">
-                        {filteredNavItems.map((navItem, index) => (
+                        {navItems.map((navItem, index) => (
                           <li
                             key={index}
                             className={cn(
-                              navItem.label === "Pages" &&
-                                "menu-item-has-children",
                               isActiveClassName(
-                                navItem.label === "Home" ? "/" : navItem.link
+                                navItem.link === "/" ? "/" : navItem.link
                               )
                             )}
                           >
-                            <Link
-                              to={navItem.label === "Home" ? "/" : navItem.link}
-                            >
-                              {navItem.label}
-                            </Link>
-                            {navItem.label === "Pages" && (
-                              <ul className="sub-menu">
-                                <li className={cn(isActiveClassName("/team"))}>
-                                  <Link to="/team">Team Page</Link>
-                                </li>
-                              </ul>
-                            )}
+                            <Link to={navItem.link}>{navItem.label}</Link>
                           </li>
                         ))}
                       </ul>
@@ -135,14 +125,14 @@ const HeaderOne = () => {
                     <div className="header-action">
                       <ul className="list-wrap">
                         <li className="header-btn">
-                          {/* <a
+                          <a
                             href={"https://calendly.com/ingversionsdigital/30min?month=2025-02"}
                             className={header.ctaButton.classes}
                             target="_blank"
                             rel="noopener noreferrer" 
                           >
                             {header.ctaButton.text} <span></span>
-                          </a> */}
+                          </a>
                         </li>
                       </ul>
                     </div>

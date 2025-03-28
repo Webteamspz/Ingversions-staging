@@ -582,7 +582,7 @@ label {
 .navbar-wrap {
   display: flex;
   flex-grow: 1;
-  margin-right: 75px;
+  /* margin-right: 75px; */
   height: 75px;
 }
 .navbar-wrap ul {
@@ -631,6 +631,7 @@ label {
 .header-action > ul li {
   position: relative;
   margin-left: 30px;
+  top: 12px;
 }
 .header-action ul li:first-child {
   margin-left: 0;
@@ -1361,7 +1362,7 @@ label {
   z-index: 0;
   /* background: rgba(23,28,59,255); */
   /* Add the hue rotate animation */
-  animation: hueRotate 20s linear infinite;
+  animation: hueRotate 50s linear infinite;
 }
 
 @keyframes hueRotate {

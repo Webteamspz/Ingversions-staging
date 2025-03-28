@@ -18,7 +18,7 @@ const Preloader = () => {
         <div id="loader" className="loader">
           <div className="loader-container">
             <div className="loader-icon">
-              <img src="/img/preloader.png" alt="Preloader" />
+              <img src="/Ingversions-staging/img/preloader.png" alt="Preloader" />
             </div>
           </div>
         </div>

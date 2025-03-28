@@ -1,7 +1,7 @@
 {
   "header": "It is The Header of the Website",
   "logo": {
-    "src": "/img/logo/Main-logo.png",
+    "src": "/Ingversions-staging/img/logo/Main-logo.png",
     "alt": "Website Logo",
     "link": "/"
   },
@@ -143,7 +143,7 @@
     "title": "One of Our Best Ongoing Projects",
     "buttonText": "Details",
     "buttonLink": "/project-details",
-    "imageSrc": "/img/images/our_project_img.png"
+    "imageSrc": "/Ingversions-staging/img/images/our_project_img.png"
   },
   "customerSupport": {
     "title": "Customer Support",
@@ -159,7 +159,7 @@
         "link": "/contact"
       }
     ],
-    "imageSrc": "/img/images/support_img.png"
+    "imageSrc": "/Ingversions-staging/img/images/support_img.png"
   },
   "banner": {
     "backgroundClass": "banner-area banner-bg",
@@ -192,36 +192,36 @@
     },
     "shapes": [
       {
-        "src": "/img/banner/banner_shape01.png",
+        "src": "/Ingversions-staging/img/banner/banner_shape01.png",
         "alt": "Shape 1"
       },
       {
-        "src": "/img/banner/banner_shape02.png",
+        "src": "/Ingversions-staging/img/banner/banner_shape02.png",
         "alt": "Shape 2",
         "class": "animationFramesOne"
       },
       {
-        "src": "/img/banner/banner_shape03.png",
+        "src": "/Ingversions-staging/img/banner/banner_shape03.png",
         "alt": "Shape 3",
         "class": "contactSwimmer"
       },
       {
-        "src": "/img/banner/banner_shape04.png",
+        "src": "/Ingversions-staging/img/banner/banner_shape04.png",
         "alt": "Shape 4",
         "class": "rotateme"
       },
       {
-        "src": "/img/banner/banner_shape05.png",
+        "src": "/Ingversions-staging/img/banner/banner_shape05.png",
         "alt": "Shape 5",
         "class": "animation1"
       },
       {
-        "src": "/img/banner/banner_shape06.png",
+        "src": "/Ingversions-staging/img/banner/banner_shape06.png",
         "alt": "Shape 6",
         "class": "ribbonRotate"
       },
       {
-        "src": "/img/banner/banner_shape07.png",
+        "src": "/Ingversions-staging/img/banner/banner_shape07.png",
         "alt": "Shape 7",
         "class": "float-bob-x"
       }
@@ -259,7 +259,7 @@
     "backgroundClass": "about-area",
     "containerClass": "container custom-container",
     "image": {
-      "src": "/img/images/about_img.jpg",
+      "src": "/Ingversions-staging/img/images/about_img.jpg",
       "alt": "About Image"
     },
     "sectionTitle": {
@@ -297,32 +297,32 @@
       "imgWrapClass": "team-img-wrap",
       "images": [
         {
-          "src": "/img/team/team_img_shape.png",
+          "src": "/Ingversions-staging/img/team/team_img_shape.png",
           "alt": "shape",
           "className": "img-shape"
         },
         {
-          "src": "/img/team/team_img01.png",
+          "src": "/Ingversions-staging/img/team/team_img01.png",
           "alt": "Team member 1",
           "className": "img-one"
         },
         {
-          "src": "/img/team/team_img02.png",
+          "src": "/Ingversions-staging/img/team/team_img02.png",
           "alt": "Team member 2",
           "className": "img-two"
         },
         {
-          "src": "/img/team/team_img03.png",
+          "src": "/Ingversions-staging/img/team/team_img03.png",
           "alt": "Team member 3",
           "className": "img-three"
         },
         {
-          "src": "/img/team/team_img04.png",
+          "src": "/Ingversions-staging/img/team/team_img04.png",
           "alt": "Team member 4",
           "className": "img-four"
         },
         {
-          "src": "/img/team/team_img05.png",
+          "src": "/Ingversions-staging/img/team/team_img05.png",
           "alt": "Team member 5",
           "className": "img-five"
         }
@@ -347,12 +347,12 @@
     "shapeWrapClass": "team-shape-wrap",
     "shapes": [
       {
-        "src": "/img/images/team_shape01.png",
+        "src": "/Ingversions-staging/img/images/team_shape01.png",
         "alt": "Shape 1",
         "className": "ribbonRotate"
       },
       {
-        "src": "/img/images/team_shape02.png",
+        "src": "/Ingversions-staging/img/images/team_shape02.png",
         "alt": "Shape 2",
         "className": "float-bob-x"
       }
@@ -413,8 +413,8 @@
       },
       "projectItems": [
         {
-          "imageSrc": "/img/project/Project a-b 1-1.png",
-          "popupImageSrc": "/img/project/Project a-b 1.png",
+          "imageSrc": "/Ingversions-staging/img/project/Project a-b 1-1.png",
+          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 1.png",
           "link": "/project-details",
           "popupContent": {
             "bulletPoints": [
@@ -428,8 +428,8 @@
           }
         },
         {
-          "imageSrc": "/img/project/Project a-b 2-1.png",
-          "popupImageSrc": "/img/project/Project a-b 2.png",
+          "imageSrc": "/Ingversions-staging/img/project/Project a-b 2-1.png",
+          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 2.png",
           "link": "/project-details",
           "popupContent": {
             "bulletPoints": [
@@ -443,8 +443,8 @@
           }
         },
         {
-          "imageSrc": "/img/project/Project a-b 3-1.png",
-          "popupImageSrc": "/img/project/Project a-b 3.png",
+          "imageSrc": "/Ingversions-staging/img/project/Project a-b 3-1.png",
+          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 3.png",
           "link": "/project-details",
           "popupContent": {
             "bulletPoints": [
@@ -458,8 +458,8 @@
           }
         },
         {
-          "imageSrc": "/img/project/Project a-b 4-1.png",
-          "popupImageSrc": "/img/project/Project a-b 4.png",
+          "imageSrc": "/Ingversions-staging/img/project/Project a-b 4-1.png",
+          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 4.png",
           "link": "/project-details",
           "popupContent": {
             "bulletPoints": [
@@ -473,8 +473,8 @@
           }
         },
         {
-          "imageSrc": "/img/project/Project a-b 5-1.png",
-          "popupImageSrc": "/img/project/Project a-b 5.png",
+          "imageSrc": "/Ingversions-staging/img/project/Project a-b 5-1.png",
+          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 5.png",
           "link": "/project-details",
           "popupContent": {
             "bulletPoints": [
@@ -488,8 +488,8 @@
           }
         },
         {
-          "imageSrc": "/img/project/Project a-b 6-1.png",
-          "popupImageSrc": "/img/project/Project a-b 6.png",
+          "imageSrc": "/Ingversions-staging/img/project/Project a-b 6-1.png",
+          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 6.png",
           "link": "/project-details",
           "popupContent": {
             "bulletPoints": [
@@ -503,8 +503,8 @@
           }
         },
         {
-          "imageSrc": "/img/project/Project a-b 7-1.png",
-          "popupImageSrc": "/img/project/Project a-b 7.png",
+          "imageSrc": "/Ingversions-staging/img/project/Project a-b 7-1.png",
+          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 7.png",
           "link": "/project-details",
           "popupContent": {
             "bulletPoints": [
@@ -518,8 +518,8 @@
           }
         },
         {
-          "imageSrc": "/img/project/Project a-b 8.png",
-          "popupImageSrc": "/img/project/Project a-b 8.png",
+          "imageSrc": "/Ingversions-staging/img/project/Project a-b 8.png",
+          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 8.png",
           "link": "/project-details",
           "popupContent": {
             "bulletPoints": [
@@ -537,12 +537,12 @@
     "shapeWrapClass": "project-shape-wrap",
     "shapes": [
       {
-        "src": "/img/project/project_shape01.png",
+        "src": "/Ingversions-staging/img/project/project_shape01.png",
         "alt": "Shape One",
         "className": "shape-one ribbonRotate"
       },
       {
-        "src": "/img/project/project_shape02.png",
+        "src": "/Ingversions-staging/img/project/project_shape02.png",
         "alt": "Shape Two",
         "className": "shape-two ribbonRotate"
       }
@@ -648,18 +648,18 @@
     "containerClass": "container",
     "rowClass": "row align-items-center",
     "content": {
-      "iconSrc": "/img/icon/consultation_icon01.png",
+      "iconSrc": "/Ingversions-staging/img/icon/consultation_icon01.png",
       "subTitle": "95% Accuracy",
       "title": "Worldwide Best Digital Marketing Agency",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and",
       "listItems": [
         {
-          "iconSrc": "/img/icon/consultation_icon02.png",
+          "iconSrc": "/Ingversions-staging/img/icon/consultation_icon02.png",
           "iconText": "12x",
           "title": "Faster Order Processing"
         },
         {
-          "iconSrc": "/img/icon/consultation_icon03.png",
+          "iconSrc": "/Ingversions-staging/img/icon/consultation_icon03.png",
           "iconText": "95%",
           "title": "Processing Accuracy"
         }
@@ -667,11 +667,11 @@
     },
     "shapeImages": [
       {
-        "src": "/img/images/consultation_shape01.png",
+        "src": "/Ingversions-staging/img/images/consultation_shape01.png",
         "className": "shape-one ribbonRotate"
       },
       {
-        "src": "/img/images/consultation_shape02.png",
+        "src": "/Ingversions-staging/img/images/consultation_shape02.png",
         "className": "shape-two float-bob-x"
       }
     ]
@@ -686,24 +686,24 @@
     },
     "blogItems": [
       {
-        "src": "/img/blog/blog_img01.jpg",
+        "src": "/Ingversions-staging/img/blog/blog_img01.jpg",
         "tag": "Branding",
         "title": "How To Create JavaScript Vanilla Gantt Chart: Adding",
-        "authorImg": "/img/blog/blog_avatar01.png",
+        "authorImg": "/Ingversions-staging/img/blog/blog_avatar01.png",
         "authorName": "Ataur"
       },
       {
-        "src": "/img/blog/blog_img02.jpg",
+        "src": "/Ingversions-staging/img/blog/blog_img02.jpg",
         "tag": "Branding",
         "title": "How To Create JavaScript Vanilla Gantt Chart: Adding",
-        "authorImg": "/img/blog/blog_avatar02.png",
+        "authorImg": "/Ingversions-staging/img/blog/blog_avatar02.png",
         "authorName": "Ataur"
       },
       {
-        "src": "/img/blog/blog_img03.jpg",
+        "src": "/Ingversions-staging/img/blog/blog_img03.jpg",
         "tag": "Branding",
         "title": "How To Create JavaScript Vanilla Gantt Chart: Adding",
-        "authorImg": "/img/blog/blog_avatar03.png",
+        "authorImg": "/Ingversions-staging/img/blog/blog_avatar03.png",
         "authorName": "Ataur"
       }
     ]
@@ -721,31 +721,31 @@
     },
     "shapes": [
       {
-        "src": "/img/images/newsletter_bg_shape.png",
+        "src": "/Ingversions-staging/img/images/newsletter_bg_shape.png",
         "className": "bg-shape"
       },
       {
-        "src": "/img/images/newsletter_shape01.png",
+        "src": "/Ingversions-staging/img/images/newsletter_shape01.png",
         "className": "shape-one"
       },
       {
-        "src": "/img/images/newsletter_shape02.png",
+        "src": "/Ingversions-staging/img/images/newsletter_shape02.png",
         "className": "shape-two"
       },
       {
-        "src": "/img/images/newsletter_shape03.png",
+        "src": "/Ingversions-staging/img/images/newsletter_shape03.png",
         "className": "shape-three"
       },
       {
-        "src": "/img/images/newsletter_shape04.png",
+        "src": "/Ingversions-staging/img/images/newsletter_shape04.png",
         "className": "shape-four"
       },
       {
-        "src": "/img/images/newsletter_shape05.png",
+        "src": "/Ingversions-staging/img/images/newsletter_shape05.png",
         "className": "shape-five"
       },
       {
-        "src": "/img/images/newsletter_shape06.png",
+        "src": "/Ingversions-staging/img/images/newsletter_shape06.png",
         "className": "shape-six"
       }
     ]
@@ -753,7 +753,7 @@
   "footerOne": {
     "footerTop": {
       "logo": {
-        "src": "/img/logo/Main-logo.png",
+        "src": "/Ingversions-staging/img/logo/Main-logo.png",
         "link": "/"
       },
       "socialLinks": [
@@ -787,17 +787,17 @@
           "title": "About Store",
           "contactDetails": [
             {
-              "icon": "/img/icon/phone_icon.svg",
+              "icon": "/Ingversions-staging/img/icon/phone_icon.svg",
               "text": "+91-8103684321",
               "link": "tel:0123456789"
             },
             {
-              "icon": "/img/icon/email.png",
+              "icon": "/Ingversions-staging/img/icon/email.png",
               "text": "ingversionsdigital@gmail.com",
               "link": " mailto:ingversionsdigital@gmail.com"
             },
             {
-              "icon": "/img/icon/location.png",
+              "icon": "/Ingversions-staging/img/icon/location.png",
               "text": "Sachin, Surat 394230"
             }
           ]
