@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Ingversions-staging/static/css/main.1aa45eee.css",
-    "main.js": "/Ingversions-staging/static/js/main.8c952ad6.js",
+    "main.css": "/Ingversions-staging/static/css/main.732ccc1c.css",
+    "main.js": "/Ingversions-staging/static/js/main.91423be7.js",
     "static/media/fa-light-300.svg": "/Ingversions-staging/static/media/fa-light-300.41f412013bf9bd66ffdc.svg",
     "static/media/fa-regular-400.svg": "/Ingversions-staging/static/media/fa-regular-400.b071770fa866c5acb0db.svg",
     "static/media/fa-solid-900.svg": "/Ingversions-staging/static/media/fa-solid-900.eb853357420442f26729.svg",
@@ -28,11 +28,11 @@
     "static/media/slick.ttf": "/Ingversions-staging/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Ingversions-staging/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Ingversions-staging/index.html",
-    "main.1aa45eee.css.map": "/Ingversions-staging/static/css/main.1aa45eee.css.map",
-    "main.8c952ad6.js.map": "/Ingversions-staging/static/js/main.8c952ad6.js.map"
+    "main.732ccc1c.css.map": "/Ingversions-staging/static/css/main.732ccc1c.css.map",
+    "main.91423be7.js.map": "/Ingversions-staging/static/js/main.91423be7.js.map"
   },
   "entrypoints": [
-    "static/css/main.1aa45eee.css",
-    "static/js/main.8c952ad6.js"
+    "static/css/main.732ccc1c.css",
+    "static/js/main.91423be7.js"
   ]
 }
