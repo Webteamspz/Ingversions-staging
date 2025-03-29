@@ -62,7 +62,7 @@ const BrandAreaThree = () => {
             {[1, 2, 3, 4, 5, 6].map((x) => (
               <div key={x} className="col-12">
                 <div className="brand-item-two">
-                  <img src={`/img/brand/h3_brand_img0${x}.png`} alt="" />
+                  <img src={`/Ingversions-staging/img/brand/h3_brand_img0${x}.png`} alt="" />
                 </div>
               </div>
             ))}

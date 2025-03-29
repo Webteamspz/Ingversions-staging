@@ -51,7 +51,7 @@ const TestimonialAreaFive = () => {
               <div className="testimonial-item-five">
                 <div className="testimonial-info">
                   <div className="thumb">
-                    <img src="/img/images/testimonial_avatar01.png" alt="" />
+                    <img src="/Ingversions-staging/img/images/testimonial_avatar01.png" alt="" />
                   </div>
 
                   <div className="content">

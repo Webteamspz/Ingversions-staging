@@ -12,7 +12,7 @@ const FooterThree = () => {
                 <div className="footer-content-two text-center">
                   <div className="logo">
                     <Link to="/">
-                      <img src="/img/logo/logo.png" alt="" />
+                      <img src="/Ingversions-staging/img/logo/logo.png" alt="" />
                     </Link>
                   </div>
                   <p>
@@ -38,22 +38,22 @@ const FooterThree = () => {
                     <li className="title">Follow us</li>
                     <li>
                       <a href="https://www.facebook.com/p/Ingversions-Digital-Pvt-Ltd-61573019451087">
-                        <img src="/img/icon/footer_icon01.png" alt="Facebook" />
+                        <img src="/Ingversions-staging/img/icon/footer_icon01.png" alt="Facebook" />
                       </a>
                     </li>
                     <li>
                       <a href="https://www.instagram.com/ingversions/">
-                        <img src="/img/icon/footer_icon02.png" alt="Instagram" />
+                        <img src="/Ingversions-staging/img/icon/footer_icon02.png" alt="Instagram" />
                       </a>
                     </li>
                     <li>
                       <a href="https://www.linkedin.com/company/inversions/">
-                        <img src="/img/icon/footer_icon03.png" alt="Linkedin" />
+                        <img src="/Ingversions-staging/img/icon/footer_icon03.png" alt="Linkedin" />
                       </a>
                     </li>
                     <li>
                       <a href="https://x.com/Ingversions">
-                        <img src="/img/icon/footer_icon04.png" alt="Twitter" />
+                        <img src="/Ingversions-staging/img/icon/footer_icon04.png" alt="Twitter" />
                       </a>
                     </li>
                   </ul>

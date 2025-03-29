@@ -7,7 +7,7 @@ const CommunityArea = () => {
         <div className="row justify-content-center">
           <div className="col-xl-8 col-lg-10">
             <div className="community-img">
-              <img src="/img/images/community_img.png" alt="" />
+              <img src="/Ingversions-staging/img/images/community_img.png" alt="" />
             </div>
             <div className="community-content">
               <p>

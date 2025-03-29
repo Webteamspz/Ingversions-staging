@@ -1,14 +1,19 @@
 import React from "react";
 import SlickSlider from "../SlickSlider/SlickSlider";
 
-const BrandArea = () => {
+const BrandArea = (props) => {
+  // Extract the brands array from props.
+  // If no brands are passed, default to an empty array.
+  const { brands = [] } = props;
+
+  // Slick slider settings
   const slick_settings = {
     dots: false,
     infinite: true,
     speed: 1000,
     autoplay: true,
     arrows: false,
-    slidesToShow: 6,
+    slidesToShow: 3, // Change according to the number of images
     slidesToScroll: 2,
     responsive: [
       {
@@ -50,10 +55,10 @@ const BrandArea = () => {
       <div className="container">
         <div className="row brand-active">
           <SlickSlider settings={slick_settings}>
-            {[1, 2, 3, 4, 5, 6].map((x) => (
-              <div key={x} className="col-12">
+            {brands.map((brand, index) => (
+              <div className="col-12" key={index}>
                 <div className="brand-item">
-                  <img src={`/img/brand/brand_img0${x}.png`} alt="" />
+                  <img src={brand.src} alt={brand.alt || ""} />
                 </div>
               </div>
             ))}

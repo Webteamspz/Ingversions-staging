@@ -173,7 +173,7 @@ img,
 /* Header and footer bars */
 .popup-header,
 .popup-footer {
-  background: #252526;
+  /* background: #252526; */
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -713,7 +713,7 @@ label {
   margin: auto;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10000;
   background: var(--tg-white);
   -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
@@ -1685,7 +1685,7 @@ label {
 }
 .banner-content-two {
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 .banner-content-two .sub-title {
   font-weight: 500;
@@ -6503,7 +6503,7 @@ label {
   flex: 0 0 32%;
   /* flex: 0 0 74%; */
   position: sticky;
-  top: 70px; /* Adjust this value to control how far from the top it sticks */
+  top: 100px; /* Adjust this value to control how far from the top it sticks */
   z-index: 0;
   align-self: flex-start; /* If within a flex container */
 }

@@ -5,7 +5,7 @@ const TestimonialAreaThreeItem = (props) => {
     <div className="swiper-slide">
       <div className="testimonial-item-three">
         <div className="testimonial-thumb-three">
-          <img src={`/img/images/testimonial_avatar0${props.id}.png`} alt="" />
+          <img src={`/Ingversions-staging/img/images/testimonial_avatar0${props.id}.png`} alt="" />
         </div>
 
         <div className="testimonial-content-three">

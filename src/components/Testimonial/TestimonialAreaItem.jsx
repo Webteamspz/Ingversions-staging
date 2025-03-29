@@ -9,7 +9,7 @@ const TestimonialAreaItem = (props) => {
       <div className="testimonial-info">
         <div className="thumb">
           <img
-            src={`/img/images/testimonial_avatar0${props.item.src}.png`}
+            src={`/Ingversions-staging/img/images/testimonial_avatar0${props.item.src}.png`}
             alt=""
           />
         </div>

@@ -1,50 +1,28 @@
+// ServicesAreaTwo.jsx
 import React from "react";
 import ServicesAreaTwoItem from "./ServicesAreaTwoItem";
 
-const ServicesAreaTwo = () => {
-  const services_two_items = [
-    {
-      src: "/img/icon/services_icon01.png",
-      url: "/services-details",
-      title: "UI Design",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      src: "/img/icon/services_icon21.png",
-      url: "/services-details",
-      title: "Motion Design",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      src: "/img/icon/services_icon03.png",
-      url: "/services-details",
-      title: "Prototype",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      src: "/img/icon/services_icon04.png",
-      url: "/services-details",
-      title: "UX Research",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-  ];
+const ServicesAreaTwo = ({ sectionTitle = {}, items = [] }) => {
+  const { subTitle = "", title = "" } = sectionTitle;
 
   return (
     <section className="services-area-two">
       <div className="container">
+        {/* Section Title */}
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="section-title title-style-two white-title mb-65 text-center">
-              <span className="sub-title">What I Do</span>
-              <h2 className="title">What Service Do I Provide</h2>
+              <span className="sub-title">{subTitle}</span>
+              <h2 className="title">{title}</h2>
             </div>
           </div>
         </div>
 
+        {/* Service Items */}
         <div className="row justify-content-center">
-          {services_two_items.map((x, index) => (
+          {items.map((item, index) => (
             <div key={index} className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-              <ServicesAreaTwoItem item={x} />
+              <ServicesAreaTwoItem item={item} />
             </div>
           ))}
         </div>

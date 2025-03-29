@@ -35,27 +35,27 @@ const BreadcrumbArea = ({
 
       {showShape && (
         <div className="breadcrumb-shape-wrap">
-          <img src="/img/images/breadcrumb_shape01.png" alt="" />
-          <img src="/img/images/breadcrumb_shape02.png" alt="" />
+          <img src="/Ingversions-staging/img/images/breadcrumb_shape01.png" alt="" />
+          <img src="/Ingversions-staging/img/images/breadcrumb_shape02.png" alt="" />
         </div>
       )}
 
       {showShapeThree && (
         <div className="breadcrumb-shape-wrap-three">
           <img
-            src="/img/images/breadcrumb_shape04.png"
+            src="/Ingversions-staging/img/images/breadcrumb_shape04.png"
             alt=""
             className="wow zoomIn"
             data-wow-delay=".2s"
           />
           <img
-            src="/img/images/breadcrumb_shape05.png"
+            src="/Ingversions-staging/img/images/breadcrumb_shape05.png"
             alt=""
             className="wow zoomIn"
             data-wow-delay=".2s"
           />
           <img
-            src="/img/images/breadcrumb_shape06.png"
+            src="/Ingversions-staging/img/images/breadcrumb_shape06.png"
             alt=""
             className="wow zoomIn"
             data-wow-delay=".2s"
