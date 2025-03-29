@@ -2,7 +2,7 @@ import React from "react";
 import BrandAreaThree from "../../components/Brand/BrandAreaThree";
 import BreadcrumbArea from "../../components/BreadcrumbArea/BreadcrumbArea";
 import CommunityArea from "../../components/CommunityArea/CommunityArea";
-import NewsLetterAreaTwo from "../../components/NewsLetter/NewsLetterAreaTwo";
+// import NewsLetterAreaTwo from "../../components/NewsLetter/NewsLetterAreaTwo";
 import TeamAreaThree from "../../components/Team/TeamAreaThree";
 import Layout from "../../layouts/Layout";
 
@@ -17,7 +17,7 @@ const TeamPage = () => {
       />
       <CommunityArea />
       <TeamAreaThree />
-      <NewsLetterAreaTwo />
+      {/* <NewsLetterAreaTwo /> */}
       <BrandAreaThree />
     </Layout>
   );

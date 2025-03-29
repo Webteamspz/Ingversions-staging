@@ -199,6 +199,10 @@ img,
   margin: 0 auto;
   text-align: center;
   overflow: auto;
+  background: none;
+  width: 100%;
+  border: none;
+  padding: 0;
 }
 .popup-content::-webkit-scrollbar {
   display: none;
@@ -713,7 +717,7 @@ label {
   margin: auto;
   top: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 1;
   background: var(--tg-white);
   -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
