@@ -146,6 +146,11 @@ img,
   margin-right: 10px;
   transition: all 0.3s ease-out 0s;
 }
+img[src="/Ingversions-staging/img/brand/brand_img07.png"] {
+  /* Add your styles here */
+  width: 250px;
+  max-width: 100%;
+}
 .fw-title img:nth-of-type(3) {
   width: 20px;
 }
@@ -717,7 +722,7 @@ label {
   margin: auto;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10000;
   background: var(--tg-white);
   -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
@@ -1357,7 +1362,7 @@ label {
 /*=============================
 	05. Banner
 ===============================*/
-.banner-bg { 
+.banner-bg {
   background-image: url(/public/img/banner/hero-bg.png);
   background-size: cover;
   background-position: center;
@@ -1432,11 +1437,11 @@ label {
   .banner-content .title {
     font-size: 4.5rem; /* ~Tailwind's text-7xl */
     line-height: 1.1;
-      /* Gradient text effect */
-  background: linear-gradient(to right, #9964ff, #4323fc);
-  -webkit-background-clip: text; /* Needed for Safari */
-  background-clip: text;
-  color: transparent; /* Makes the text show the gradient */
+    /* Gradient text effect */
+    background: linear-gradient(to right, #9964ff, #4323fc);
+    -webkit-background-clip: text; /* Needed for Safari */
+    background-clip: text;
+    color: transparent; /* Makes the text show the gradient */
   }
 }
 
@@ -2340,7 +2345,7 @@ label {
   border-radius: 100px;
 }
 .about-inner .row .col-54 {
-  width: 54%;
+  /* width: 54%; */
   flex: 0 0 auto;
 }
 .about-inner .row .col-46 {
@@ -2357,6 +2362,18 @@ label {
 .section-title .title {
   font-size: 40px;
   margin-bottom: 0;
+}
+.about-content{
+  display: flex;
+}
+.col-54 p{
+  padding-top: 10px;
+}
+.about-content .section-title{
+  padding: 10px;
+}
+.flex-column{
+  margin-top: 18px;
 }
 .about-content > p {
   opacity: 0.7;
@@ -2426,7 +2443,92 @@ label {
 .about-img img {
   border-radius: 20px;
 }
+/* ---------------------------
+       New Tab Navigation Styles
+--------------------------- */
+.tab-navs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
 
+.tab-nav-item {
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: darkgray; */
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tab-nav-item:hover {
+  background: black;
+  color: white;
+}
+
+.active-nav-item {
+  background: #252541;
+}
+
+.tab-collection {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.tab-item {
+  height: 300px;
+  display: none; /* Hide all tabs by default */
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.active-tab-item {
+  display: flex; /* Show active tab */
+}
+
+.innerLeft {
+  /* width: 48%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5%;
+  overflow: auto;
+}
+
+.innerRight {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional styling for images within tab content */
+.innerRight img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+.about-area .content{
+padding-top: 10px;
+}
+.inner-left img{
+  max-width: 65%;
+}
+img[src="/Ingversions-staging/img/icon/about_icon01.png"] {
+  /* Add your styles here */
+  max-width: 65%;
+}
+img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
+  /* Add your styles here */
+  max-width: 65%;
+}
 /* about-two */
 .about-area-two {
   position: relative;
@@ -6160,9 +6262,9 @@ label {
   justify-content: center;
   border-radius: 10px;
   /* color: var(--tg-silver); */
-  color: #4616A3;
+  color: #4616a3;
   font-size: 14px;
-  border: 2px solid #F50569;
+  border: 2px solid #f50569;
 }
 /* .footer-social .list-wrap li a:hover {
   color: var(--tg-secondary-color);
@@ -6482,8 +6584,6 @@ label {
   color: #333;
 }
 
-
-
 /*=============================
 	33. CRO
 ===============================*/
@@ -6494,7 +6594,6 @@ label {
   background-color: #fff;
   position: relative;
 }
-
 
 /* Two-column layout: left for the title, right for the service boxes */
 .cro-header-content {
@@ -6560,10 +6659,10 @@ label {
 /* Override default positioning of navigation arrows */
 .my-cro-swiper .swiper-button-next,
 .my-cro-swiper .swiper-button-prev {
-  position: absolute;  /* Ensure absolute positioning */
-  top: auto;           /* Remove default centering */
-  bottom: 10px;        /* Place at the bottom */
-  z-index: 10;         /* Bring arrows to the top */
+  position: absolute; /* Ensure absolute positioning */
+  top: auto; /* Remove default centering */
+  bottom: 10px; /* Place at the bottom */
+  z-index: 10; /* Bring arrows to the top */
   pointer-events: auto; /* Make sure clicks register */
 }
 
@@ -6578,8 +6677,6 @@ label {
   right: auto;
 }
 
-
-
 /*=============================
 	33. Company Logos
 ===============================*/
@@ -6592,6 +6689,7 @@ label {
 .company-logos-text {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* The marquee wrapper */
@@ -6601,12 +6699,36 @@ label {
   width: 100%;
   /* Optional: add some top/bottom spacing if you like */
   padding: 1rem 0;
+  position: relative;
+}
+/* Create fading overlay on the left and right */
+.marquee::before,
+.marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 5rem; /* Adjust width as needed */
+  height: 100%;
+  z-index: 2;
+  pointer-events: none; /* Ensure these elements don't interfere with interactions */
+}
+
+/* Left gradient fading in */
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.6), #fff);
+}
+
+/* Right gradient fading in */
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), #fff);
 }
 
 /* This is the moving container that holds all logos */
 .marquee__group {
-  display: inline-flex;         /* Place images side by side */
-  width: max-content;           /* Let it expand as wide as needed */
+  display: inline-flex; /* Place images side by side */
+  width: max-content; /* Let it expand as wide as needed */
   animation: scroll-left 200s linear infinite;
   /* 
     "20s" is the duration of one full scroll.
@@ -6618,7 +6740,7 @@ label {
 .marquee__group img {
   display: inline-block;
   margin-right: 2rem; /* spacing between logos */
-  height: 40px;       /* example logo height, adjust as needed */
+  height: 40px; /* example logo height, adjust as needed */
   /* you can set width: auto; or a fixed width if needed */
 }
 
@@ -6638,3 +6760,75 @@ label {
   }
 }
 
+/* LogoCarousel */
+
+:root {
+  --scroll-duration: 50s; /* Adjust the speed here */
+}
+
+/* Container that holds everything */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  /* Set a fixed height or let content define it. Adjust as needed. */
+  height: 100px;
+  overflow: hidden; /* Hide the scrolling overflow */
+  background-color: #1d1d25; /* Example background */
+}
+
+/* Scrolling wrapper: holds the actual images */
+.scrolling-wrapper {
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* Ensure images stay in a row */
+}
+
+/* This is the element that actually moves */
+.scrolling-content {
+  display: inline-flex;
+  animation: scroll-left var(--scroll-duration) linear infinite;
+}
+
+/* Keyframes for right-to-left scrolling */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move left by 50% (since we doubled the logos for seamless loop) */
+    transform: translateX(-50%);
+  }
+}
+
+/* Basic styling for images */
+.scrolling-content img {
+  height: 50px; /* Adjust to your desired logo size */
+  margin: 0 2rem; /* Spacing between logos */
+}
+
+/* Optional: fade edges to mimic the screenshot’s look */
+.fade-edge {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 200px; /* Adjust fade width to your liking */
+  pointer-events: none; /* Let clicks pass through if needed */
+  z-index: 2;
+}
+
+.fade-edge.left {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.fade-edge.right {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+.logo-carousel-text {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}

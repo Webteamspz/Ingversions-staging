@@ -8,6 +8,7 @@ import AboutAreaTwo from "../../components/About/AboutAreaTwo";
 import CounterArea from "../../components/CounterArea/CounterArea";
 import ServicesAreaTwo from "../../components/ServicesArea/ServicesAreaTwo";
 import WorkArea from "../../components/Work/WorkArea";
+import LogoCarousel from "../../components/LogoCarousel/LogoCarousel";
 // import TestimonialAreaTwo from "../../components/Testimonial/TestimonialAreaTwo";
 import teamMembers from "../../components/teamMembers.json";
 // import ProjectsSection from "../../components/Project/ProjectsSection";
@@ -68,6 +69,7 @@ const PersonalPortfolio = () => {
       <AboutAreaTwo {...(devData?.aboutAreaTwo  || {})} />
       <CounterArea {...(devData?.counterArea || {})} />
       <ServicesAreaTwo {...(devData?.servicesArea || {})} />
+      <LogoCarousel {...(devData?.logocarousel  || {})} />
       <WorkArea {...(devData?.workArea || {})} />
       {/* <ProjectsSection {...(devData?.projectsSection || {})} /> */}
       {/* <TestimonialAreaTwo {...(devData?.testimonialArea || {})} /> */}
