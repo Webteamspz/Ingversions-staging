@@ -12,7 +12,7 @@ const FooterTwo = () => {
                 <div className="footer-content-two text-center">
                   <div className="logo">
                     <Link to="/">
-                      <img src="/Ingversions-staging/img/logo/Main-logo.png" alt="" />
+                    <img src="/Ingversions-staging/img/logo/portfolio-logo.png" alt="New Logo" /> 
                     </Link>
                   </div>
                   <p>

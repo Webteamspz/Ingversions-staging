@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/Ingversions-staging/static/css/main.a4b5f462.css",
-    "main.js": "/Ingversions-staging/static/js/main.eeb54d7b.js",
-    "static/js/640.5a95df60.chunk.js": "/Ingversions-staging/static/js/640.5a95df60.chunk.js",
-    "static/js/191.9049a695.chunk.js": "/Ingversions-staging/static/js/191.9049a695.chunk.js",
+    "main.css": "/Ingversions-staging/static/css/main.29107e43.css",
+    "main.js": "/Ingversions-staging/static/js/main.a3eff246.js",
+    "static/js/640.c0f3aa8f.chunk.js": "/Ingversions-staging/static/js/640.c0f3aa8f.chunk.js",
+    "static/js/191.54dcbe00.chunk.js": "/Ingversions-staging/static/js/191.54dcbe00.chunk.js",
     "static/media/fa-light-300.svg": "/Ingversions-staging/static/media/fa-light-300.41f412013bf9bd66ffdc.svg",
     "static/media/fa-regular-400.svg": "/Ingversions-staging/static/media/fa-regular-400.b071770fa866c5acb0db.svg",
     "static/media/fa-solid-900.svg": "/Ingversions-staging/static/media/fa-solid-900.eb853357420442f26729.svg",
@@ -30,11 +30,11 @@
     "static/media/slick.ttf": "/Ingversions-staging/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Ingversions-staging/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Ingversions-staging/index.html",
-    "main.a4b5f462.css.map": "/Ingversions-staging/static/css/main.a4b5f462.css.map",
-    "main.eeb54d7b.js.map": "/Ingversions-staging/static/js/main.eeb54d7b.js.map"
+    "main.29107e43.css.map": "/Ingversions-staging/static/css/main.29107e43.css.map",
+    "main.a3eff246.js.map": "/Ingversions-staging/static/js/main.a3eff246.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4b5f462.css",
-    "static/js/main.eeb54d7b.js"
+    "static/css/main.29107e43.css",
+    "static/js/main.a3eff246.js"
   ]
 }

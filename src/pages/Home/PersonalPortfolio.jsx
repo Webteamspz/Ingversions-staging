@@ -6,11 +6,12 @@ import BannerTwo from "../../components/Banner/BannerTwo";
 import BrandArea from "../../components/Brand/BrandArea";
 import AboutAreaTwo from "../../components/About/AboutAreaTwo";
 import CounterArea from "../../components/CounterArea/CounterArea";
-import ServicesAreaTwo from "../../components/ServicesArea/ServicesAreaTwo";
+// import ServicesAreaTwo from "../../components/ServicesArea/ServicesAreaTwo";
 import WorkArea from "../../components/Work/WorkArea";
-import LogoCarousel from "../../components/LogoCarousel/LogoCarousel";
+// import LogoCarousel from "../../components/LogoCarousel/LogoCarousel";
 // import TestimonialAreaTwo from "../../components/Testimonial/TestimonialAreaTwo";
 import teamMembers from "../../components/teamMembers.json";
+import CompanyLogosSectionThree from "../../components/Technology/CompanyLogosSectionThree";
 // import ProjectsSection from "../../components/Project/ProjectsSection";
 
 const PersonalPortfolio = () => {
@@ -68,8 +69,8 @@ const PersonalPortfolio = () => {
       <BrandArea {...(devData?.brandArea || {})} />
       <AboutAreaTwo {...(devData?.aboutAreaTwo  || {})} />
       <CounterArea {...(devData?.counterArea || {})} />
-      <ServicesAreaTwo {...(devData?.servicesArea || {})} />
-      <LogoCarousel {...(devData?.logocarousel  || {})} />
+      <CompanyLogosSectionThree {...(devData?.CompanyLogosSectionThree || {})} />
+      {/* <ServicesAreaTwo {...(devData?.servicesArea || {})} /> */}
       <WorkArea {...(devData?.workArea || {})} />
       {/* <ProjectsSection {...(devData?.projectsSection || {})} /> */}
       {/* <TestimonialAreaTwo {...(devData?.testimonialArea || {})} /> */}

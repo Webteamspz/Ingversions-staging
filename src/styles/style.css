@@ -155,105 +155,188 @@ img[src="/Ingversions-staging/img/brand/brand_img07.png"] {
   width: 20px;
 }
 /* Full-screen overlay */
-/* Full-screen overlay */
+/* CaseStudyPopup.css */
+
+/* Overlay backdrop */
 .popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #1e1e1e;
-  opacity: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 9999;
-  overflow-y: auto; /* Vertical scroll if content exceeds screen */
-}
-.popup-container {
-  max-width: 1170px;
-  width: 100%;
-}
-
-/* Header and footer bars */
-.popup-header,
-.popup-footer {
-  /* background: #252526; */
-  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  color: #fff;
-}
-
-/* Popup body styling */
-.popup-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto; /* Allows scrolling within the body */
   justify-content: center;
-  align-items: center;
-  padding: 20px;
-  max-width: 1170px;
+  z-index: 1000;
 }
 
-/* Container for image and text content */
-.popup-content {
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  overflow: auto;
-  background: none;
+/* Modal container */
+.popup-container {
+  background: #1e1e1e;
+  border-radius: 16px;
   width: 100%;
+  max-width: 1300px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  max-height: 90vh;    /* never taller than 90% of viewport */
+  overflow-y: auto;    /* scroll vertically when content is too tall */
+
+    /* Firefox */
+    scrollbar-width: none;  /* hide scrollbar track */
+    /* IE 10+ */
+    -ms-overflow-style: none;
+}
+/* WebKit (Chrome, Safari, Edge) */
+.popup-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+/* Slide‑in & slide‑out */
+.popup-container.enter {
+  animation: slideIn 0.3s ease-out forwards;
+}
+.popup-container.exit {
+  animation: slideOut 0.3s ease-in forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes slideOut {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+.popup-trigger-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: #2f1407;
   border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   padding: 0;
 }
-.popup-content::-webkit-scrollbar {
-  display: none;
+
+.popup-trigger-icon svg {
+  width: 24px;
+  height: 24px;
 }
 
-/* Image styling within popup */
-.popup-content img {
-  max-width: 100%;
-  max-height: 75vh; /* Limit image height to show text below */
-  object-fit: contain;
-  margin-bottom: 20px;
+
+/* Header */
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
 }
 
-/* Popup text styling (bullet points & hypothesis) */
-.popup-text {
-  text-align: left;
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+}
+.close-btn:hover {
   color: #fff;
-  background: black;
-  padding: 20px;
 }
 
-/* Styling for bullet points */
-.popup-text ul {
-  margin: 20px 0;
-  padding-left: 20px;
-  list-style-type: disc;
+/* Body */
+.popup-body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px;
+  gap: 24px;
+}
+.popup-content {
+  flex: 1 1 300px;
+  color: #e0e0e0;
+}
+.popup-description {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+.popup-buttons {
+  display: flex;
+  gap: 12px;
+}
+.btn-schedule {
+  background: #f97316;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.btn-schedule:hover {
+  background: #ea580c;
+}
+.btn-next {
+  background: transparent;
+  border: 2px solid #f97316;
+  color: #f97316;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.btn-next:hover {
+  background: #f97316;
+  color: #fff;
 }
 
-/* Styling for the hypothesis heading */
-.popup-text h3 {
-  margin: 20px 0 10px;
+/* Image */
+.popup-image-wrapper {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Key Results */
+.popup-key-results {
+  background: #381f12;
+  padding: 20px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.key-results-title {
+  color: #fff;
   font-size: 20px;
-  color: aqua;
+  margin-right: 24px;
 }
-
-/* Styling for the hypothesis paragraph */
-.popup-text p {
-  margin-bottom: 20px;
-  line-height: 1.5;
-  font-size: 14px;
-  color: white;
+.key-results-list {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
 }
-.popup-text li {
+.key-result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.key-result-value {
+  color: #f97316;
+  font-size: 32px;
+  font-weight: 800;
+}
+.key-result-label {
+  color: #aaa;
+  margin-top: 4px;
   font-size: 14px;
-  color: white;
-  margin-left: 15px;
 }
 
 /* Close button styling */
@@ -722,7 +805,7 @@ label {
   margin: auto;
   top: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 1;
   background: var(--tg-white);
   -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
@@ -751,9 +834,34 @@ label {
 .menu-style-two .navbar-wrap > ul > li:hover > a {
   color: var(--tg-primary-color);
 }
-.menu-style-two.sticky-menu {
+.menu-style-two.sticky-menu-two {
   background: var(--tg-black);
   box-shadow: 0 10px 15px rgb(0 0 0 / 10%);
+}
+.sticky-menu-two {
+  position: fixed;
+  left: 0;
+  margin: auto;
+  top: 0;
+  width: 100%;
+  z-index: 12;
+  background: var(--tg-white);
+  -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+  -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  border-radius: 0;
+}
+.sticky-menu-two.menu-area {
+  padding: 2px 0;
+}
+.sticky-menu-two .navbar-wrap ul li .sub-menu {
+  border-radius: 0 0 15px 15px;
+}
+.menu-style-two .navbar-wrap ul li .sub-menu {
+  background: var(--tg-black-two);
+  border-color: #2a2a34;
+  box-shadow: 0px 30px 70px 0px rgb(0 0 0 / 15%);
 }
 
 /*=============================
@@ -1031,7 +1139,7 @@ label {
 .sticky-menu .header-contact-wrap {
   top: 87px;
 }
-.body-contact-overlay {
+/* .body-contact-overlay {
   position: fixed;
   right: 0px;
   top: 100px;
@@ -1046,7 +1154,7 @@ label {
 .body-contact-overlay.active {
   opacity: 1;
   visibility: visible;
-}
+} */
 .header-contact-wrap .customer-support-wrap > .title,
 .header-contact-wrap .left-side-content > .title {
   margin-bottom: 0;
@@ -1684,6 +1792,11 @@ label {
 }
 
 /* banner-two */
+.logo-two {
+  width: 175px;
+  max-width: 100%;
+}
+
 .banner-area-two {
   padding: 160px 0 130px;
   position: relative;
@@ -1716,12 +1829,21 @@ label {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 38px;
+  /* gap: 38px; */
 }
 .banner-content-bottom .list-wrap {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.banner-content-bottom img {
+  max-width: 100%;
+  width: 29px;
+  height: 29px;
+}
+img[src="/Ingversions-staging/img/icon/banner_icon04.svg"] {
+  max-width: 100%;
+  width: 100px;
 }
 .banner-shape-wrap-two img {
   position: absolute;
@@ -2363,16 +2485,16 @@ label {
   font-size: 40px;
   margin-bottom: 0;
 }
-.about-content{
+.about-content {
   display: flex;
 }
-.col-54 p{
+.col-54 p {
   padding-top: 10px;
 }
-.about-content .section-title{
+.about-content .section-title {
   padding: 10px;
 }
-.flex-column{
+.flex-column {
   margin-top: 18px;
 }
 .about-content > p {
@@ -2515,20 +2637,18 @@ label {
   max-width: 100%;
   border-radius: 20px;
 }
-.about-area .content{
-padding-top: 10px;
+.about-area .content {
+  padding-top: 10px;
 }
-.inner-left img{
+.inner-left img {
   max-width: 65%;
 }
-img[src="/Ingversions-staging/img/icon/about_icon01.png"] {
-  /* Add your styles here */
+/* img[src="/Ingversions-staging/img/icon/about_icon01.png"] {
   max-width: 65%;
 }
 img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
-  /* Add your styles here */
   max-width: 65%;
-}
+} */
 /* about-two */
 .about-area-two {
   position: relative;
@@ -2587,6 +2707,9 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
 .about-img-two img {
   position: relative;
   z-index: 9;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 /*=============================
@@ -3232,9 +3355,14 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--tg-black-two);
+  background: white;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.brand-item img {
+  height: 140px;
+  max-width: 82%;
 }
 
 /* brand-two */
@@ -3492,6 +3620,7 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
   margin-top: -85px;
   z-index: 1;
   position: relative;
+  padding: 20px;
 }
 .counter-item-wrap {
   background: var(--tg-black-two);
@@ -3833,6 +3962,9 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
   animation: scrollUpDown 3s infinite alternate ease-in-out;
   position: relative;
   scroll-behavior: smooth;
+}
+.project-slider-wrapper {
+  position: relative;
 }
 
 /* Keyframes for scrolling effect */
@@ -5014,6 +5146,195 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
   bottom: 28.5%;
   top: auto;
 }
+/* Container for the entire section */
+.marketing-section {
+  width: 100%;
+  padding: 2rem;
+  background-color: #f5f6fa; /* Light background behind the card */
+  font-family: sans-serif;
+}
+
+/* Main container that holds the two columns */
+.marketing-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Left side content */
+.marketing-left {
+  flex: 1 1 50%;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.marketing-left h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  background: radial-gradient(99.34% 118.33% at 47.79% 5%, #3f20fb 0%, #b377ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For other browsers that support it */
+  color: transparent;
+}
+
+.marketing-left p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* List styling for bullet points */
+.marketing-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.marketing-left li {
+  margin-bottom: 1.5rem;
+}
+
+.marketing-left li strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+/* Right side content with purple gradient */
+.marketing-right {
+  flex: 1 1 50%;
+  background: radial-gradient(99.34% 118.33% at 47.79% 5%, #3f20fb 0%, #b377ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Box that holds the form */
+.consultation-box {
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 560px;
+  color: #fff;
+}
+
+.consultation-box h3 {
+  font-size: 1.5rem;  /* text-2xl */
+  line-height: 2rem;  /* matching default line-height for text-2xl */
+  font-weight: bold;  /* font-bold */
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+/* The form itself */
+.consultation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Lighten the background for inputs */
+.consultation-form input::placeholder,
+.consultation-form textarea::placeholder {
+  color: #999;
+}
+
+/* Button styling */
+.consultation-form button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #fff;
+  color: #7b47f5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.consultation-form button:hover {
+  background-color: #e5dbff;
+}
+.consultation-form label{
+  color: white;
+}
+.custom-input {
+  width: 100%;
+  padding: 0.75rem 1rem; /* py-3 and px-4 */
+  border-radius: 0.5rem; /* rounded-lg */
+  background-color: rgba(255, 255, 255, 0.1); /* bg-white/10 */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* border and border-white/20 */
+  color: #ffffff; /* text-white */
+}
+
+/* Placeholder styling */
+.custom-input::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* placeholder-white/60 */
+}
+
+/* Focus styling */
+.custom-input:focus {
+  outline: none; /* focus:outline-none */
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* focus:ring-2 focus:ring-white/50 */
+}
+.custom-divider {
+  width: 5rem;            /* Tailwind w-20 (usually 5rem) */
+  height: 0.25rem;        /* h-1 */
+  background-color: #fff; /* bg-white */
+  border-radius: 0.25rem; /* rounded (default rounding) */
+  margin-bottom: 1.5rem;  /* mb-6 */
+}
+
+/* Trusted section at the bottom */
+.trusted-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.trusted-section p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.trusted-logos {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.trusted-logos img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.trusted-logos img:hover {
+  opacity: 1;
+  filter: none;
+}
 
 /*=============================
 	31. FAQs
@@ -5284,6 +5605,86 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
   left: 48%;
   bottom: 38%;
   animation: animationFramesOne 30s infinite linear;
+}
+
+/* Work List slider container */
+.work-list {
+  margin-top: 30px; /* Adjust as necessary */
+}
+
+/* Swiper slider custom styling */
+.work-swiper {
+  width: 100%;
+  height: 300px;  /* Adjust height according to your design */
+  overflow: hidden; /* This helps constrain the slides within the container */
+}
+
+/* Style each slide */
+.work-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Highlight active slide (the one at the top in vertical direction) */
+.work-swiper .swiper-slide-active {
+  background-color: #f89e52; /* Change to your highlight color */
+  border-left: 4px solid #f39c12; /* Optional highlight border */
+}
+
+/* Work slide internal layout */
+.work-slide {
+  display: flex;
+  align-items: flex-start;
+}
+
+.work-slide .icon {
+  width: 60px;
+  flex: 0 0 60px;
+  margin-right: 23px;
+}
+
+.work-slide .icon img {
+  border-radius: 50%;
+  display: block;
+}
+
+.work-slide .content .title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #1e1e1e;
+}
+
+.work-slide .content p {
+  margin-bottom: 0;
+  color: #1e1e1e;
+  opacity: 0.7;
+  text-transform: capitalize;
+  width: 80%;
+}
+/* Make sure the Swiper container has a height */
+.work-swiper {
+  width: 100%;
+  height: 250px; /* or any desired value */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Optional: style the slide itself */
+.work-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Highlight the active slide if you want */
+.work-swiper .swiper-slide-active {
+  background-color: #ffd966;
+  border-left: 4px solid #f39c12;
 }
 
 /*=============================
@@ -6362,8 +6763,13 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
 .footer-top-two {
   padding: 100px 0 85px;
 }
-.footer-content-two .logo {
+.footer-content-two .logo-two {
   margin-bottom: 18px;
+}
+img[src="/Ingversions-staging/img/logo/portfolio-logo.png"] {
+  max-width: 100%;
+  width: 175px;
+  margin-bottom: 10px;
 }
 .footer-content-two p {
   margin-bottom: 0;
@@ -6550,7 +6956,7 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
 	32. Services
 ===============================*/
 .services-section {
-  padding: 60px 0;
+  padding: 30px 0;
   background-color: #fff;
 }
 
@@ -6590,7 +6996,7 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
 
 /* Overall Section */
 .cro-section {
-  padding: 60px 10px;
+  padding: 30px 10px;
   background-color: #fff;
   position: relative;
 }
@@ -6681,8 +7087,14 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
 	33. Company Logos
 ===============================*/
 .company-logos-section {
-  padding: 60px 30px;
+  padding: 20px 0px;
   background-color: #fff;
+}
+.company-logos-section-two {
+  background-color: #fff;
+}
+.company-logos-section-three {
+  background-color: #1f1d28;
 }
 
 /* Text styling, adjust as needed */
@@ -6701,6 +7113,15 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
   padding: 1rem 0;
   position: relative;
 }
+/* The marquee wrapper */
+.marquee-three {
+  /* Hide any overflow from the container */
+  overflow: hidden;
+  width: 100%;
+  /* Optional: add some top/bottom spacing if you like */
+  padding: 1rem 0;
+  position: relative;
+}
 /* Create fading overlay on the left and right */
 .marquee::before,
 .marquee::after {
@@ -6709,7 +7130,17 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
   top: 0;
   width: 5rem; /* Adjust width as needed */
   height: 100%;
-  z-index: 2;
+  z-index: 0;
+  pointer-events: none; /* Ensure these elements don't interfere with interactions */
+}
+.marquee-three::before,
+.marquee-three::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 5rem; /* Adjust width as needed */
+  height: 100%;
+  z-index: 0;
   pointer-events: none; /* Ensure these elements don't interfere with interactions */
 }
 
@@ -6724,9 +7155,39 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.6), #fff);
 }
+/* Left gradient fading in */
+.marquee-three::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(74, 74, 74, 0.6), #1f1d28) transparent;
+}
+
+/* Right gradient fading in */
+.marquee-three::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(74, 74, 74, 0.6), #1f1d28) transparent;
+}
+
 
 /* This is the moving container that holds all logos */
 .marquee__group {
+  display: inline-flex; /* Place images side by side */
+  width: max-content; /* Let it expand as wide as needed */
+  animation: scroll-left 200s linear infinite;
+  /* 
+    "20s" is the duration of one full scroll.
+    Increase it to slow down the scroll, decrease it to speed it up.
+  */
+}
+.marquee__group-two {
+  display: inline-flex; /* Place images side by side */
+  width: max-content; /* Let it expand as wide as needed */
+  animation: scroll-left 200s linear infinite;
+  /* 
+    "20s" is the duration of one full scroll.
+    Increase it to slow down the scroll, decrease it to speed it up.
+  */
+}
+.marquee__group-three {
   display: inline-flex; /* Place images side by side */
   width: max-content; /* Let it expand as wide as needed */
   animation: scroll-left 200s linear infinite;
@@ -6741,6 +7202,20 @@ img[src="/Ingversions-staging/img/icon/about_icon02.png"] {
   display: inline-block;
   margin-right: 2rem; /* spacing between logos */
   height: 40px; /* example logo height, adjust as needed */
+  /* you can set width: auto; or a fixed width if needed */
+}
+.marquee__group-two img {
+  display: inline-block;
+  margin-right: 2rem; /* spacing between logos */
+  width: 80px;
+  height: 50px; /* example logo height, adjust as needed */
+  /* you can set width: auto; or a fixed width if needed */
+}
+.marquee__group-three img {
+  display: inline-block;
+  margin-right: 2rem; /* spacing between logos */
+  width: 80px;
+  height: 50px; /* example logo height, adjust as needed */
   /* you can set width: auto; or a fixed width if needed */
 }
 

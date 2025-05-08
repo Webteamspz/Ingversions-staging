@@ -1,9 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import bannerData from "../componentsConfig.json"; // Import JSON config
+import CompanyLogosSection from "../Technology/CompanyLogosSection";
 
 const BannerOne = () => {
   const { banner } = bannerData; // Extract banner data from JSON
+// Scroll handler
+const scrollToConsultationArea = (e) => {
+  // Prevent default behavior (if using an anchor tag)
+  e.preventDefault();
+  
+  const target = document.getElementById("marketing-section");
+  if (target) {
+    // Scroll smoothly to the consultation area
+    target.scrollIntoView({ behavior: "smooth" });
+  } else {
+    console.warn("Consultation area element not found");
+  }
+};
 
   return (
     <section className={banner.backgroundClass}>
@@ -43,11 +57,10 @@ const BannerOne = () => {
                 {banner.content.title.text}
               </h2>
               <Link
-                to={banner.content.ctaButton.link}
+                href="#marketing-section" // fallback if JS is disabled
+                onClick={scrollToConsultationArea}
                 className={banner.content.ctaButton.buttonClass}
                 data-wow-delay={banner.content.ctaButton.animationDelay}
-                target="_blank" // optional: opens in a new tab
-                rel="noopener noreferrer" // recommended when using target="_blank"
               >
                 {banner.content.ctaButton.text} <span></span>
               </Link>
@@ -67,7 +80,9 @@ const BannerOne = () => {
           />
         ))}
       </div> */}
+      <CompanyLogosSection />
     </section>
+   
   );
 };
 

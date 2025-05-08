@@ -12,10 +12,10 @@ const HeaderTwo = () => {
     $(window).on("scroll", function () {
       var scroll = $(window).scrollTop();
       if (scroll < 245) {
-        $("#sticky-header").removeClass("sticky-menu");
+        $("#sticky-header").removeClass("sticky-menu-two");
         $(".scroll-to-target").removeClass("open");
       } else {
-        $("#sticky-header").addClass("sticky-menu");
+        $("#sticky-header").addClass("sticky-menu-two");
         $(".scroll-to-target").addClass("open");
       }
     });
@@ -97,9 +97,9 @@ const HeaderTwo = () => {
                 <div className="menu-wrap m-1">
                   <nav className="menu-nav">
                     {/* Logo */}
-                    <div className="logo">
+                    <div className="logo-two">
                       <Link to={header.logo.link}>
-                        <img src={header.logo.src} alt={header.logo.alt} />
+                      <img src="/Ingversions-staging/img/logo/portfolio-logo.png" alt="New Logo" />  {/* Updated src and alt */}
                       </Link>
                     </div>
 

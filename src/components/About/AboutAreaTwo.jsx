@@ -44,7 +44,7 @@ const AboutAreaTwo = ({ columns, shapes }) => {
                       </h2>
                     </div>
                     <p>{column.content.description}</p>
-                    <Link to={column.content.button.link}>
+                    {/* <Link to={column.content.button.link}>
                       <span className="arrow">
                         <img
                           src={column.content.button.arrowIcon}
@@ -52,7 +52,7 @@ const AboutAreaTwo = ({ columns, shapes }) => {
                         />
                       </span>
                       <span className="text">{column.content.button.text}</span>
-                    </Link>
+                    </Link> */}
                   </div>
                 )}
               </div>

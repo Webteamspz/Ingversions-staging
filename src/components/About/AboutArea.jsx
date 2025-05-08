@@ -34,7 +34,7 @@ const AboutArea = () => {
                
 
                 {/* Tab Navigation (replaces the original list-wrap) */}
-                <div className=" flex-column">
+                <div className="col-46 order-0 order-lg-2">
                 <div className="tab-navs">
                   {listItems.map((item, index) => (
                     <div

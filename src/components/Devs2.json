@@ -20,8 +20,8 @@
           },
           "iconList": [
             "/Ingversions-staging/img/icon/banner_icon01.svg",
-            "/Ingversions-staging/img/icon/banner_icon02.svg",
-            "/Ingversions-staging/img/icon/banner_icon03.svg",
+            "/Ingversions-staging/img/icon/github-logo.png",
+            "/Ingversions-staging/img/icon/linkedin-logo.png",
             "/Ingversions-staging/img/icon/banner_icon04.svg"
           ]
         }
@@ -45,16 +45,31 @@
 "brandArea": {
   "brands": [
     {
-      "src": "/Ingversions-staging/img/brand/brand_img01.png",
+      "src": "/Ingversions-staging/img/Toolss/Asana-logo.svg",
       "alt": "Brand 1"
     },
     {
-      "src": "/Ingversions-staging/img/brand/brand_img07.png",
-      "alt": "Brand 7"
+      "src": "/Ingversions-staging/img/Toolss/hive-logo.webp",
+      "alt": "Brand 2"
     },
     {
-      "src": "/Ingversions-staging/img/brand/brand_img06.png",
+      "src": "/Ingversions-staging/img/Toolss/clickup-logo.png",
+      "alt": "Brand 3"
+    },
+    {
+      "src": "/Ingversions-staging/img/Toolss/clockify-logo.png",
+      "alt": "Brand 4"
+    },
+    {
+      "src": "/Ingversions-staging/img/Toolss/monday-logo.png",
+      "alt": "Brand 5"
+    }, {
+      "src": "/Ingversions-staging/img/Toolss/trello-logo.png",
       "alt": "Brand 6"
+    },
+    {
+      "src": "/Ingversions-staging/img/Toolss/airtable-logo.png",
+      "alt": "Brand 7"
     }
   ]
 },
@@ -98,7 +113,7 @@
 "counterArea": {
   "items": [
     {
-      "amount": 3,
+      "amount": 2,
       "info": [
         "Project",
         "Completed"
@@ -347,17 +362,27 @@
     {
       "src": "/Ingversions-staging/img/icon/about_icon01.png",
       "title": "Concept Creation",
-      "desc": "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+      "desc": "We workshop ideas with you to define a clear, unique vision—laying the conceptual groundwork that drives every successful project."
     },
     {
       "src": "/Ingversions-staging/img/icon/about_icon02.png",
       "title": "Sketch Drawing",
-      "desc": "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+      "desc": "Our designers translate concepts into detailed sketches, mapping out layouts and user flows before moving into digital."
     },
     {
       "src": "/Ingversions-staging/img/icon/about_icon03.png",
       "title": "Final Design",
-      "desc": "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+      "desc": "We polish prototypes into pixel‑perfect, brand‑aligned visuals—ensuring consistency, clarity, and a standout user experience."
+    },
+    {
+      "src": "/Ingversions-staging/img/icon/about_icon02.png",
+      "title": "WordPress Websites",
+      "desc": "We build custom, SEO‑friendly WordPress sites with intuitive CMS workflows—empowering you to update content effortlessly."
+    },
+    {
+      "src": "/Ingversions-staging/img/icon/about_icon02.png",
+      "title": "UI/UX Design",
+      "desc": "Our user‑centric approach combines engaging interfaces with seamless interactions to boost satisfaction and conversions."
     }
   ],
   "shapeImages": [

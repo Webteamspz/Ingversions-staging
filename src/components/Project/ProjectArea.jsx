@@ -1,92 +1,96 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-} from "swiper/core";
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useSwiperArrows } from "../../lib/hooks/useSwiperArrows";
-import config from "../componentsConfig.json"; // JSON is saved here.
+import "swiper/swiper-bundle.css";
+import CaseStudyPopup from "../Popup/CaseStudyPopup";
+import config from "../componentsConfig.json";
 
-// Configure Swiper to use modules
+// Configure Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const ProjectArea = () => {
-  const { projectArea } = config;
+  const projectArea = config.projectArea;
   const { sliderRef, toNext, toPrev } = useSwiperArrows();
-
-  // Instead of using popupImage, store the entire project item data.
   const [popupData, setPopupData] = useState(null);
 
-  const openPopup = (item) => {
-    setPopupData(item);
+  const openPopup = (item) => setPopupData(item);
+  const closePopup = () => setPopupData(null);
+
+  const handleScheduleCall = () => {
+    console.log("Scheduling call for:", popupData);
+    // Your scheduling logic
   };
 
-  const closePopup = () => {
-    setPopupData(null);
+  const handleNextCase = () => {
+    console.log("Loading next case after:", popupData);
+    const items = projectArea.rightColumn.projectItems;
+    const currentIndex = items.indexOf(popupData);
+    const nextIndex = (currentIndex + 1) % items.length;
+    setPopupData(items[nextIndex]);
   };
 
   return (
-    <section className={projectArea.sectionClass}>
-      <div className={projectArea.containerClass}>
-        <div className={projectArea.rowClass}>
-          {/* Left Column */}
-          <div className={projectArea.leftColumn.colClass}>
-            <div className={projectArea.leftColumn.contentClass}>
-              <div className="section-title white-title mb-30">
-                <span className="sub-title">
-                  {projectArea.leftColumn.sectionTitle.subTitle}
-                </span>
-                <h2 className="title">
-                  {projectArea.leftColumn.sectionTitle.title}
-                </h2>
-              </div>
-              <p>{projectArea.leftColumn.description}</p>
-              <div className="content-bottom">
-                {/* <Link
-                  to={projectArea.leftColumn.button.link}
-                  className={projectArea.leftColumn.button.className}
-                >
-                  {projectArea.leftColumn.button.text} <span></span>
-                </Link> */}
+    <>
+      <section className={projectArea.sectionClass}>
+        <div className={projectArea.containerClass}>
+          <div className={projectArea.rowClass}>
+            {/* Left Column */}
+            <div className={projectArea.leftColumn.colClass}>
+              <div className={projectArea.leftColumn.contentClass}>
+                <div className="section-title white-title mb-30">
+                  <span className="sub-title">
+                    {projectArea.leftColumn.sectionTitle.subTitle}
+                  </span>
+                  <h2 className="title">
+                    {projectArea.leftColumn.sectionTitle.title}
+                  </h2>
+                </div>
+                <p>{projectArea.leftColumn.description}</p>
                 <div className="project-nav">
                   <button
                     className={projectArea.leftColumn.navButtons.prevClass}
                     onClick={toPrev}
-                  ></button>
+                  />
                   <button
                     className={projectArea.leftColumn.navButtons.nextClass}
                     onClick={toNext}
-                  ></button>
+                  />
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Right Column */}
-          <div className={projectArea.rightColumn.colClass}>
-            <div className="project-item-wrap">
-              <div className={projectArea.rightColumn.swiperContainerClass}>
+            {/* Right Column */}
+            <div className={projectArea.rightColumn.colClass}>
+            <div className={`${projectArea.rightColumn.swiperContainerClass} project-slider-wrapper`} style={{ position: 'relative' }}>
                 <Swiper
                   {...projectArea.rightColumn.swiperSettings}
-                  onBeforeInit={(swiper) => {
-                    sliderRef.current = swiper;
-                  }}
+                  onBeforeInit={(swiper) => (sliderRef.current = swiper)}
                 >
-                  {projectArea.rightColumn.projectItems.map((item, index) => (
-                    <SwiperSlide key={index}>
-                      <div className="swiper-slide">
-                        <div
-                          className="project-item"
+                  {projectArea.rightColumn.projectItems.map((item, idx) => (
+                    <SwiperSlide key={idx}>
+                      <div className="project-item" style={{ position: 'relative' }}>
+                        <img
+                          src={item.imageSrc}
+                          alt={`Project ${idx + 1}`}
+                        />
+
+                        {/* Eye icon trigger */}
+                        <button
+                          className="popup-trigger-icon"
                           onClick={() => openPopup(item)}
+                          aria-label="View case study"
                         >
-                          <img
-                            src={item.imageSrc}
-                            alt={`Project ${index + 1}`}
-                          />
-                        </div>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="#fff"
+                            width="24"
+                            height="24"
+                          >
+                            <path d="M12 4.5C7 4.5 2.7 7.6 1 12c1.7 4.4 6 7.5 11 7.5s9.3-3.1 11-7.5C21.3 7.6 17 4.5 12 4.5zm0 13c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm0-9a3 3 0 11-.001 6.001A3 3 0 0112 8.5z" />
+                          </svg>
+                        </button>
                       </div>
                     </SwiperSlide>
                   ))}
@@ -95,59 +99,35 @@ const ProjectArea = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Shapes */}
-      <div className={projectArea.shapeWrapClass}>
-        {projectArea.shapes.map((shape, index) => (
-          <img
-            key={index}
-            src={shape.src}
-            alt={shape.alt}
-            className={shape.className}
-          />
-        ))}
-      </div>
-
-      {/* Full-Screen Popup Modal */}
-      {popupData && (
-        <div className="popup-overlay">
-          <div className="popup-container">
-            <div className="popup-header">
-              <button className="close-btn" onClick={closePopup}>
-                X
-              </button>
-            </div>
-            <div className="popup-body">
-              <div className="popup-content">
-                {/* Popup Image */}
-                <img src={popupData.popupImageSrc} alt="Popup" />
-
-                {/* Dynamic bullet points and hypothesis */}
-                {popupData.popupContent && (
-                  <div className="popup-text">
-                    <ul>
-                      <h3>Hypothesis</h3>
-                      <p>{popupData.popupContent.hypothesis}</p>
-                      {popupData.popupContent.bulletPoints.map(
-                        (point, index) => (
-                          <li key={index}>{point}</li>
-                        )
-                      )}
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </div>
-            <div className="popup-footer">
-              <button className="close-btn" onClick={closePopup}>
-                Close
-              </button>
-            </div>
-          </div>
+        <div className={projectArea.shapeWrapClass}>
+          {projectArea.shapes.map((shape, i) => (
+            <img
+              key={i}
+              src={shape.src}
+              alt={shape.alt}
+              className={shape.className}
+            />
+          ))}
         </div>
+      </section>
+
+      {/* Popup component */}
+      {popupData && (
+        <CaseStudyPopup
+          isOpen={true}
+          onClose={closePopup}
+          caseData={{
+            logo: popupData.logo,
+            description:
+              popupData.popupContent?.hypothesis || popupData.description,
+            imageSrc: popupData.popupImageSrc,
+            keyResults: popupData.popupContent?.bulletPoints || []
+          }}
+          onScheduleCall={handleScheduleCall}
+          onNextCase={handleNextCase}
+        />
       )}
-    </section>
+    </>
   );
 };
 

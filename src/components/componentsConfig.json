@@ -185,7 +185,7 @@
       },
       "ctaButton": {
         "text": "Book a Call",
-        "link": "https://calendly.com/ingversionsdigital/30min?month=2025-02",
+        "link": "#marketing-section",
         "buttonClass": "btn wow fadeInUp",
         "animationDelay": ".6s"
       }
@@ -227,6 +227,69 @@
       }
     ]
   },
+  "brandAreaFour": {
+  "sectionClass": "brand-area",
+  "containerClass": "container",
+  "rowClass": "row brand-active",
+  "slickSettings": {
+    "dots": false,
+    "infinite": true,
+    "speed": 1000,
+    "autoplay": true,
+    "arrows": false,
+    "slidesToShow": 4,
+    "slidesToScroll": 2,
+    "responsive": [
+      {
+        "breakpoint": 1200,
+        "settings": { "slidesToShow": 5, "slidesToScroll": 1, "infinite": true }
+      },
+      {
+        "breakpoint": 992,
+        "settings": { "slidesToShow": 4, "slidesToScroll": 1 }
+      },
+      {
+        "breakpoint": 767,
+        "settings": { "slidesToShow": 2, "slidesToScroll": 1, "arrows": false }
+      },
+      {
+        "breakpoint": 575,
+        "settings": { "slidesToShow": 2, "slidesToScroll": 1, "arrows": false }
+      }
+    ]
+  },
+  "brands": [
+    {
+      "src": "/Ingversions-staging/img/Toolss/Asana-logo.svg",
+      "alt": "Brand 1"
+    },
+    {
+      "src": "/Ingversions-staging/img/Toolss/hive-logo.webp",
+      "alt": "Brand 2"
+    },
+    {
+      "src": "/Ingversions-staging/img/Toolss/clickup-logo.png",
+      "alt": "Brand 3"
+    },
+    {
+      "src": "/Ingversions-staging/img/Toolss/clockify-logo.png",
+      "alt": "Brand 4"
+    },
+    {
+      "src": "/Ingversions-staging/img/Toolss/monday-logo.png",
+      "alt": "Brand 5"
+    },
+    {
+      "src": "/Ingversions-staging/img/Toolss/trello-logo.png",
+      "alt": "Brand 6"
+    },
+    {
+      "src": "/Ingversions-staging/img/Toolss/airtable-logo.png",
+      "alt": "Brand 7"
+    }
+  ]
+},
+
   "servicesArea": {
     "servicesList": [
       {
@@ -347,7 +410,7 @@
         "subTitle": "Our Team",
         "title": "An Essential Aspect of Creativity is Not Being Afraid to Fail"
       },
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      "description": "Our team is a passionate collective of visionaries, strategists, and innovators who embrace bold ideas and learn from every challenge. Fueled by curiosity and collaboration, we turn setbacks into breakthroughs and work together to bring creative solutions to life.",
       "button": {
         "link": "/team",
         "className": "btn",
@@ -379,7 +442,7 @@
         "subTitle": "Our Complete Craft",
         "title": "Some of Our Work in Craft Digital Agency"
       },
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      "description": "We partner with ambitious brands to craft seamless digital experiences that captivate audiences and drive measurable growth. Explore our portfolio below to see how we blend creative design, user‑centric interfaces, and data‑driven strategy to bring each project to life.",
       "button": {
         "link": "/about-me",
         "className": "btn",
@@ -422,127 +485,63 @@
         }
       },
       "projectItems": [
-        {
-          "imageSrc": "/Ingversions-staging/img/project/Project a-b 1-1.png",
-          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 1.png",
-          "link": "/project-details",
-          "popupContent": {
-            "bulletPoints": [
-              "Main categories at the top (“Shop All,” “Jewellery,” “Our World”).",
-              "“Best Sellers” section with horizontally scrollable product images, names, and prices.",
-              "Visual subcategories under “Jewellery” (e.g., Trending, New In, Necklaces, etc.), each with a thumbnail image.",
-              "Secondary links (Help, Sign In/Register, Wishlist, Pearl Rewards Program) placed neatly at the bottom.",
-              "More image-centric approach, showcasing products directly in the menu to encourage browsing."
-            ],
-            "hypothesis": "Introducing product visuals and best‐seller highlights in the main menu streamlines the shopping journey by giving customers immediate access to popular products. The visual subcategories help users quickly identify the type of jewelry they’re interested in, reducing the number of clicks needed to find specific items. By surfacing engaging imagery, the new design likely increases user engagement, encourages exploration, and potentially boosts conversion rates—all while maintaining a clean, modern look that aligns with a premium jewelry brand."
-          }
-        },
-        {
-          "imageSrc": "/Ingversions-staging/img/project/Project a-b 2-1.png",
-          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 2.png",
-          "link": "/project-details",
-          "popupContent": {
-            "bulletPoints": [
-              "Cleaner Header & Navigation – A simplified top bar and hamburger menu reduce visual clutter and improve navigation on mobile.",
-              "Consolidated Product Options – Variations (colors, sizes, etc.) are grouped in a compact format, making selection more intuitive.",
-              "Prominent “Add to Basket” Button – The larger, bolder button draws attention, simplifying the checkout process.",
-              "Refined Additional Services – Professional assembly and bed recycling are clearly listed with pricing, giving users quick add-on options.",
-              "Improved Delivery Info – Displaying estimated delivery dates prominently reassures users about shipping times."
-            ],
-            "hypothesis": "Introducing a more streamlined product page that emphasizes essential features and organizes product options in a visually cohesive manner likely simplifies the shopping journey by giving customers immediate access to key details, such as bed variations, pricing, and delivery estimates. The consolidated product options help users quickly identify the configuration they’re interested in, reducing the number of clicks needed to finalize their purchase. By surfacing engaging visuals and essential information in a clear layout, the new design likely increases user engagement, encourages exploration, and potentially boosts conversion rates—all while maintaining a clean, modern look that aligns with a premium furniture brand."
-          }
-        },
-        {
-          "imageSrc": "/Ingversions-staging/img/project/Project a-b 3-1.png",
-          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 3.png",
-          "link": "/project-details",
-          "popupContent": {
-            "bulletPoints": [
-              "Complete The Look Recommendations – Relevant add-on products appear directly in the cart, promoting cross-selling.",
-              "Enhanced Product Details – Bigger thumbnails, clear stock info (e.g., “Only 4 left!”), and simplified quantity adjustments.",
-              "Easy Note-Taking – An “Add order notes” field for special requests or instructions.",
-              "Streamlined Pricing & Subtotal – The subtotal, tax info, and checkout button are grouped more visibly for quick review.",
-              "Cleaner Layout – Improved spacing and modern typography align with a premium fashion experience."
-            ],
-            "hypothesis": "Introducing complementary product suggestions (“Complete The Look”) within the cart likely streamlines the cross-selling process by giving customers immediate access to relevant items. The expanded cart design helps users quickly review their selections and discover new pieces, reducing the number of clicks needed to find matching products. By surfacing recommended items and essential checkout details in one place, the new design likely increases user engagement, encourages exploration, and potentially boosts average order value—all while maintaining a clean, modern look that aligns with a premium fashion brand."
-          }
-        },
-        {
-          "imageSrc": "/Ingversions-staging/img/project/Project a-b 4-1.png",
-          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 4.png",
-          "link": "/project-details",
-          "popupContent": {
-            "bulletPoints": [
-              "Prominent Price & Discount – A clear display of the reduced price (from $997.00 to $399.00) and “Save $598” callout grabs attention.",
-              "Enhanced Trust Indicators – Star ratings, verified review counts, and financing options (Shop Pay installments) build confidence.",
-              "Clear Benefit Icons – Visual badges for “No Monthly Fees,” “Unlimited Range,” and “100% American Owned” reinforce key selling points.",
-              "Improved Search Bar & Navigation – A more refined header and search functionality make finding products quicker.",
-              "Bigger Product Imagery – Larger, high-resolution product images highlight details, improving the overall shopping experience."
-            ],
-            "hypothesis": "Introducing a more streamlined product page layout with prominently displayed pricing, financing options, and key product benefits likely simplifies the buying journey by giving customers immediate access to essential information. The new design helps users quickly assess the walkie-talkie’s value proposition, reducing the number of clicks needed to understand its features. By surfacing discounts, reviews, and unique selling points in a clear, visually compelling way, the new design likely increases user engagement, encourages immediate purchase decisions, and potentially boosts conversion rates—all while maintaining a modern, professional look that aligns with the brand’s identity."
-          }
-        },
-        {
-          "imageSrc": "/Ingversions-staging/img/project/Project a-b 5-1.png",
-          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 5.png",
-          "link": "/project-details",
-          "popupContent": {
-            "bulletPoints": [
-              "Award & Ratings Display – Featuring the Design Master Prize and a 4.8/5 star rating builds immediate trust and credibility.",
-              "Clear, Engaging Headline – “Designed For A New Way To Play” quickly conveys the product’s unique selling point.",
-              "Concise Bullet List – Outlining modular design, multi-age compatibility, and adaptability helps users see benefits at a glance.",
-              "Bold, Prominent CTAs – Bright “Get The Mainstay” and “Build My Bijou” buttons stand out, guiding users to the next step.",
-              "Pre-Order Messaging – A dedicated callout manages expectations around shipping times and stock availability."
-            ],
-            "hypothesis": "Introducing a more streamlined hero section that highlights the product’s unique modular features, award recognition, and vibrant imagery likely simplifies the user journey by giving families immediate access to essential information. The new design helps them quickly understand the play structure’s benefits—such as multi-age functionality, collapsibility, and expandability—reducing the steps needed to learn about key features. By surfacing star ratings, bold calls to action, and a concise pre-order message, the updated layout likely increases user engagement, encourages exploration, and potentially boosts conversions—all while maintaining a fun, family-friendly brand aesthetic."
-          }
-        },
-        {
-          "imageSrc": "/Ingversions-staging/img/project/Project a-b 6-1.png",
-          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 6.png",
-          "link": "/project-details",
-          "popupContent": {
-            "bulletPoints": [
-              "Prominent Free Trial Offer – Showcasing a “$0.00” trial bag (just pay S&H) lowers the barrier to trying the product.",
-              "Clear Pet Options – Separating “Ruff Greens” for dogs and “Meow Greens” for cats helps customers find the right product quickly.",
-              "Subscription vs. One-Time Clarity – Detailed membership perks (e.g., 25% off VitoSmart, free gifts) vs. no-commitment free trial options.",
-              "Simple Benefit Icons – Digestive enzymes, all-natural ingredients, and omega oils are highlighted with easy-to-recognize graphics.",
-              "Streamlined Page Layout – Less clutter and concise text guide users to core benefits and the CTA faster, improving overall engagement."
-            ],
-            "hypothesis": "Introducing a more streamlined landing page that highlights the free trial offer, clearly organizes pet‐specific benefits, and showcases subscription savings likely simplifies the user journey by giving pet owners immediate access to essential product details. The new design helps them quickly assess the nutritional advantages of Ruff Greens, reducing the steps needed to make a purchase decision. By surfacing key features, a risk‐free trial, and membership perks in a visually appealing layout, the new design likely increases user engagement, encourages exploration, and potentially boosts conversions—all while maintaining a friendly, health‐focused brand identity."
-          }
-        },
-        {
-          "imageSrc": "/Ingversions-staging/img/project/Project a-b 7-1.png",
-          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 7.png",
-          "link": "/project-details",
-          "popupContent": {
-            "bulletPoints": [
-              "Hero Watch Display – Featuring the current watch prominently with multiple angles/variations, providing a strong visual focus.",
-              "Concise Layout – Each watch card has a clear year, star rating, short description, and purchase option for quick decision-making.",
-              "Vertical Scrolling Collection – A more compact list lets users view all models without excessive scrolling, improving the overall user flow.",
-              "Consistent Branding & Typography – Clean fonts and a cohesive color palette reinforce the brand’s premium feel.",
-              "Streamlined Footer – A refined footer with fewer distractions keeps the spotlight on the watches themselves."
-            ],
-            "hypothesis": "Introducing a more concise and visually centered watch collection page—where each watch’s year, rating, and essential details are clearly displayed—likely simplifies the shopping journey by giving enthusiasts immediate access to every model’s unique story. The new design helps them quickly compare multiple watches at once, reducing the steps needed to select a favorite timepiece. By surfacing larger imagery, streamlined descriptions, and intuitive navigation in one place, the new layout likely increases user engagement, encourages exploration, and potentially boosts conversions—all while maintaining a sophisticated brand aesthetic."
-          }
-        },
-        {
-          "imageSrc": "/Ingversions-staging/img/project/Project a-b 8.png",
-          "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 8.png",
-          "link": "/project-details",
-          "popupContent": {
-            "bulletPoints": [
-              "Improved Visual Hierarchy – The brand logo and search bar are more prominently placed, helping users quickly orient themselves.",
-              "Highlighted Featured Product – Including a best-selling item directly in the menu draws immediate attention and encourages quick exploration.",
-              "Streamlined Navigation – Menu items are spaced more effectively, making it easier for users to scan and select categories.",
-              "Consistent Branding & Typography – Colors and fonts remain cohesive, reinforcing brand identity while enhancing clarity.",
-              "Enhanced User Experience – A cleaner layout and direct access to popular products likely improve engagement and encourage users to explore further."
-            ],
-            "hypothesis": "By introducing a featured product and refining the overall menu structure, the mobile experience becomes more intuitive, guiding users to top-selling items and key categories faster. This improved visual hierarchy and consistency across elements likely increase user satisfaction, encourage deeper site exploration, and ultimately drive higher conversions."
-          }
-        }
-      ]
+  {
+    "imageSrc": "/Ingversions-staging/img/project/Project a-b 1-1.png",
+    "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 1.png",
+    "link": "/project-details",
+    "popupContent": {
+      "hypothesis": "Displaying product images and best-seller highlights directly in the main menu lets users access popular items at a glance, simplifying navigation and reducing clicks. Visual subcategories help shoppers quickly drill down to specific jewelry types. This image-driven approach can boost engagement, encourage exploration, and ultimately drive higher conversion rates while retaining a clean, modern aesthetic."
+    }
+  },
+  {
+    "imageSrc": "/Ingversions-staging/img/project/Project a-b 2-1.png",
+    "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 2.png",
+    "link": "/project-details",
+    "popupContent": {
+      "hypothesis": "Simplifying the product page by grouping variations clearly, enhancing the “Add to Basket” button, and highlighting delivery details reduces friction and builds trust. Customers can select options quickly and feel reassured by upfront shipping information. These improvements guide shoppers smoothly toward purchase and can increase conversion rates."
+    }
+  },
+  {
+    "imageSrc": "/Ingversions-staging/img/project/Project a-b 3-1.png",
+    "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 3.png",
+    "link": "/project-details",
+    "popupContent": {
+      "hypothesis": "Embedding “Complete The Look” recommendations in the cart provides relevant add‑ons at checkout, encouraging complementary purchases. Clear product details, easy note‑taking, and streamlined pricing build confidence and convenience. This cohesive cart experience can boost average order value and speed up the overall checkout flow."
+    }
+  },
+  {
+    "imageSrc": "/Ingversions-staging/img/project/Project a-b 4-1.png",
+    "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 4.png",
+    "link": "/project-details",
+    "popupContent": {
+      "hypothesis": "Highlighting discounts, star ratings, and financing options prominently creates urgency and trust. Benefit icons and high‑resolution imagery reinforce value, while improved search and navigation help customers find products faster. This transparent, engaging page layout can increase purchase likelihood and enhance overall user satisfaction."
+    }
+  },
+  {
+    "imageSrc": "/Ingversions-staging/img/project/Project a-b 5-1.png",
+    "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 5.png",
+    "link": "/project-details",
+    "popupContent": {
+      "hypothesis": "Featuring awards, star ratings, and concise benefit highlights alongside bold calls‑to‑action drives credibility and engagement. A clear headline communicates unique selling points, and pre‑order messaging manages expectations. This focused hero section captures attention and guides users confidently toward conversion."
+    }
+  },
+  {
+    "imageSrc": "/Ingversions-staging/img/project/Project a-b 6-1.png",
+    "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 6.png",
+    "link": "/project-details",
+    "popupContent": {
+      "hypothesis": "Promoting a free trial offer with transparent pricing removes barriers to entry. Distinct pet‑specific options and clear membership versus one‑time trial details give users choice. Combined with simple benefit icons and a streamlined layout, this approach encourages sign‑ups and boosts early engagement."
+    }
+  },
+  {
+    "imageSrc": "/Ingversions-staging/img/project/Project a-b 7-1.png",
+    "popupImageSrc": "/Ingversions-staging/img/project/Project a-b 7.png",
+    "link": "/project-details",
+    "popupContent": {
+      "hypothesis": "Organizing watch models vertically with clear year, ratings, and brief descriptions enables quick comparison. Multiple angles provide visual context, while consistent branding and streamlined navigation enhance browsing. This concise layout helps enthusiasts find their ideal timepiece faster and can improve conversion by reducing decision fatigue."
+    }
+  }
+]
     },
     "shapeWrapClass": "project-shape-wrap",
     "shapes": [
@@ -611,45 +610,57 @@
     "testimonialItems": [
       {
         "title": "Davis Levin",
-        "designation": "CEO Kawasaki Inc.",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "designation": "CEO, Kawasaki Inc.",
+        "desc": "“Working with this team transformed our digital presence. Their attention to detail and user-centric approach delivered results beyond our expectations.”",
         "src": 1
       },
       {
         "title": "Jessica White",
-        "designation": "Founder of WhiteTech",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "designation": "Founder, WhiteTech",
+        "desc": "“Their creativity and technical expertise are unmatched. We saw a 40% increase in engagement within weeks of launch.”",
         "src": 2
       },
       {
-        "title": "Davis Levin",
-        "designation": "CEO Kawasaki Inc.",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "title": "Amir Patel",
+        "designation": "Head of Product, NovaWorks",
+        "desc": "“From concept to deployment, they handled every step flawlessly. Our app’s usability metrics skyrocketed.”",
         "src": 3
       },
       {
-        "title": "Davis Levin",
-        "designation": "CEO Kawasaki Inc.",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "src": 1
-      },
-      {
-        "title": "Davis Levin",
-        "designation": "CEO Kawasaki Inc.",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "title": "Sofia Martinez",
+        "designation": "Marketing Director, BrightWave",
+        "desc": "“A truly collaborative experience—responsive, knowledgeable, and always proactive in suggesting improvements.”",
         "src": 4
       },
       {
-        "title": "Davis Levin",
-        "designation": "CEO Kawasaki Inc.",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "title": "Ethan Chen",
+        "designation": "CTO, QuantumLeaf",
+        "desc": "“Their structured process and clear documentation made integration into our stack seamless.”",
         "src": 1
       },
       {
-        "title": "Davis Levin",
-        "designation": "CEO Kawasaki Inc.",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "title": "Priya Singh",
+        "designation": "Co-Founder, EcoVerse",
+        "desc": "“Fantastic communication and rapid iteration cycles helped us hit our deadline with a polished product.”",
+        "src": 2
+      },
+      {
+        "title": "Liam O’Connor",
+        "designation": "Product Manager, SkyHigh",
+        "desc": "“They really understood our vision and translated it into an intuitive, beautiful interface.”",
         "src": 3
+      },
+      {
+        "title": "Hannah Becker",
+        "designation": "CEO, GreenRoute",
+        "desc": "“Exceptional attention to accessibility and performance; our users keep coming back for the smooth experience.”",
+        "src": 4
+      },
+      {
+        "title": "Carlos Ruiz",
+        "designation": "Lead Designer, PixelForge",
+        "desc": "“Brilliant blend of design flair and code discipline—our landing page has never looked or performed better.”",
+        "src": 1
       }
     ]
   },

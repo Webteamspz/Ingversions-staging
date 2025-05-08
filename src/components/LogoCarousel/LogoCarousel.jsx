@@ -2,12 +2,6 @@ import React from 'react';
 
 // Example array of image sources (you can use up to 80+)
 const logos = [
-  "/Ingversions-staging/img/brand/brand_img01.png",
-  "/Ingversions-staging/img/brand/brand_img02.png",
-  "/Ingversions-staging/img/brand/brand_img03.png",
-  "/Ingversions-staging/img/brand/brand_img04.png",
-  "/Ingversions-staging/img/brand/brand_img05.png",
-  "/Ingversions-staging/img/brand/brand_img06.png",
   "/Ingversions-staging/img/brand/client_logos/bluebagles/animus.png",
   "/Ingversions-staging/img/brand/client_logos/bluebagles/bavaria.png",
   "/Ingversions-staging/img/brand/client_logos/bluebagles/danhenry.png",
@@ -50,9 +44,9 @@ function LogoCarousel() {
     return (
       <section className="company-logos-section">
         <div className="container">
-          <p className="logo-carousel-text">
+          {/* <p className="logo-carousel-text">
             Succesfully Completed Projects
-          </p>
+          </p> */}
   
           {/* Marquee container */}
           <div className="marquee">

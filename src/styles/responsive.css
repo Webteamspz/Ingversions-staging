@@ -533,6 +533,8 @@
   }
   .counter-item {
     padding: 0 0;
+    justify-content: center;
+    text-align: center;
   }
   .counter-item p {
     font-size: 16px;
@@ -2303,5 +2305,22 @@
   .banner-content .sub-title {
     margin-bottom: 20px;
     font-size: 38px;
+  }
+   /* Make the .about-content stack vertically instead of side by side */
+   .about-content {
+    display: block !important; /* Or flex-direction: column; */
+  }
+
+  /* Force columns to take full width */
+  .about-inner .row .col-54,
+  .about-inner .row .col-46 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    margin-bottom: 20px; /* Some spacing between sections */
+  }
+
+  /* If you need the tab navs a bit further below, give them margin-top */
+  .tab-navs {
+    margin-top: 15px;
   }
 }

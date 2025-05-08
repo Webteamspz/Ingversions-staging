@@ -6,7 +6,7 @@ const ConsultationArea = () => {
   const { consultationArea } = config;
 
   return (
-    <section className={consultationArea.sectionClass}>
+    <section id="consultation-area" className={consultationArea.sectionClass}>
       <div className={consultationArea.containerClass}>
         <div className={consultationArea.rowClass}>
           <div className="col-lg-7">

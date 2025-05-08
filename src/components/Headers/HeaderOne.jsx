@@ -5,6 +5,7 @@ import headerData from "../componentsConfig.json";
 import cn from "classnames";
 
 const HeaderOne = () => {
+  
   useEffect(() => {
     /*=============================================
 	=     Menu sticky & Scroll to top      =
@@ -81,6 +82,16 @@ const HeaderOne = () => {
     { label: "Home", link: "/" },
     { label: "Team Page", link: "/team" },
   ];
+  const scrollToMarketingSection = (e) => {
+    e.preventDefault();
+    const target = document.getElementById("marketing-section");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.warn("Marketing section element not found");
+    }
+  };
+  
 
 
   return (
@@ -126,10 +137,9 @@ const HeaderOne = () => {
                       <ul className="list-wrap">
                         <li className="header-btn">
                           <a
-                            href={"https://calendly.com/ingversionsdigital/30min?month=2025-02"}
-                            className={header.ctaButton.classes}
-                            target="_blank"
-                            rel="noopener noreferrer" 
+                             href="#marketing-section"
+                             onClick={scrollToMarketingSection}
+                            className={header.ctaButton.classes} 
                           >
                             {header.ctaButton.text} <span></span>
                           </a>

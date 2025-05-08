@@ -10,11 +10,11 @@ const BrandArea = (props) => {
   const slick_settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 1500,
     autoplay: true,
     arrows: false,
-    slidesToShow: 3, // Change according to the number of images
-    slidesToScroll: 2,
+    slidesToShow: 4, // Change according to the number of images
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1200,
