@@ -1,45 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 const ConsultationMarketingSection = () => {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    message: ""
-  });
-
-  // Base URL: use env var or proxy (when running locally)
-  const API_ENDPOINT = process.env.REACT_APP_API_BASE_URL
-    ? `${process.env.REACT_APP_API_BASE_URL}/api/save-to-excel`
-    : "/api/save-to-excel";
-
-  // Update state on input change
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  // Form submission handler
-  const handleSubmit = async (e) => {
+  // Only redirect to Calendly on form submission
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    try {
-      const response = await fetch(API_ENDPOINT, {
-        method: "POST",
-        mode: "cors",                // enable CORS
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
-      });
-
-      if (response.ok) {
-        window.location.href = "https://calendly.com/ingversionsdigital/30min?month=2025-04";
-      } else {
-        console.error("Error saving data:", response.status, response.statusText);
-      }
-    } catch (error) {
-      console.error("Error in handleSubmit:", error);
-    }
+    // Redirect to your Calendly scheduling page
+    window.location.href = "https://calendly.com/ingversionsdigital/30min?month=2025-04";
   };
 
   return (
@@ -47,7 +13,10 @@ const ConsultationMarketingSection = () => {
       <div className="marketing-container">
         <div className="marketing-left">
           <h2>Transform Your Business With Strategic Marketing</h2>
-          <p>Unlock your business potential with our expert marketing solutions. We create tailored strategies that drive growth and deliver measurable results.</p>
+          <p>
+            Unlock your business potential with our expert marketing solutions. We create tailored
+            strategies that drive growth and deliver measurable results.
+          </p>
           <ul>
             <li>
               <strong>Data-Driven Approach</strong>
@@ -64,39 +33,39 @@ const ConsultationMarketingSection = () => {
             <h3>Free Consultation</h3>
             <div className="custom-divider"></div>
             <form className="consultation-form" onSubmit={handleSubmit}>
-              <label htmlFor="fullName" className="block text-sm mb-2">Full Name</label>
+              <label htmlFor="fullName" className="block text-sm mb-2">
+                Full Name
+              </label>
               <input
                 type="text"
                 id="fullName"
                 name="fullName"
                 className="custom-input"
                 placeholder="John Doe"
-                value={formData.fullName}
-                onChange={handleInputChange}
                 required
               />
 
-              <label htmlFor="email" className="block text-sm mb-2">Email Address</label>
+              <label htmlFor="email" className="block text-sm mb-2">
+                Email Address
+              </label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 className="custom-input"
                 placeholder="john@example.com"
-                value={formData.email}
-                onChange={handleInputChange}
                 required
               />
 
-              <label htmlFor="message" className="block text-sm mb-2">Message</label>
+              <label htmlFor="message" className="block text-sm mb-2">
+                Message
+              </label>
               <textarea
                 id="message"
                 name="message"
                 className="custom-input"
-                rows="4"
+                rows={4}
                 placeholder="Tell us about your project"
-                value={formData.message}
-                onChange={handleInputChange}
                 required
               />
 
