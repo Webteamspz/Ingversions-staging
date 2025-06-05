@@ -14,7 +14,6 @@ import TeamPageDetails from "./pages/Team/TeamPageDetails";
 // import BlogPage from "./pages/Blog/BlogPage";
 // import BlogDetailsPage from "./pages/Blog/BlogDetailsPage";
 import AnimatedCursor from "react-animated-cursor";
-import TagManager from 'react-gtm-module';
 
 function App() {
   useEffect(() => {
@@ -28,20 +27,7 @@ function App() {
     wow.init();
   }, []);
 
-  const { pathname } = useLocation();
-   // 1️⃣ Initialize GTM once on mount
-   useEffect(() => {
-    TagManager.initialize({ gtmId: "GTM-P5BGX7H7" });
-  }, []);
-
-  // 2️⃣ Push a dataLayer pageview on every route change
-  useEffect(() => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: "pageview",
-      page: pathname,
-    });
-  }, [pathname]);
+    const { pathname } = useLocation();
 
 
   useEffect(() => {

@@ -737,11 +737,12 @@ label {
   font-size: 16px;
   padding: 19px 33px;
   font-weight: 500;
-  background: var(--tg-primary-color);
+  /* background: var(--tg-primary-color); */
+  animation: hueRotate 50s linear infinite;
 }
-.header-action .header-btn .btn span {
+/* .header-action .header-btn .btn span {
   background: var(--tg-secondary-color);
-}
+} */
 .navbar-wrap ul li .sub-menu {
   position: absolute;
   left: 0;
@@ -3478,6 +3479,9 @@ html {
 .team-shape-wrap img:nth-child(2) {
   right: 25%;
   bottom: 21%;
+}
+.team-content .btn{
+  animation: hueRotate 50s linear infinite;
 }
 
 /* team-two */
