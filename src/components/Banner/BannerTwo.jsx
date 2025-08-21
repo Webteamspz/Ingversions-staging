@@ -31,22 +31,15 @@ const BannerTwo = ({ columns, shapes }) => {
                         {/* {column.content.button.text} <span></span> */}
                       </Link>
                       <ul className="list-wrap">
-                        {column.content.iconList.map((icon, i) => (
+                        {column.content.iconList.map((item, i) => (
                           <li key={i}>
-                            {icon ===
-                            "/Ingversions-staging/img/icon/banner_icon04.svg" ? (
-                              <a
-                                href="https://calendly.com/ingversionsdigital/30min?month=2025-02"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <img src={icon} alt={`icon-${i}`} />
-                              </a>
-                            ) : (
-                              <a href="#">
-                                <img src={icon} alt={`icon-${i}`} />
-                              </a>
-                            )}
+                            <a
+                              href={item.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <img src={item.icon} alt={`icon-${i}`} />
+                            </a>
                           </li>
                         ))}
                       </ul>

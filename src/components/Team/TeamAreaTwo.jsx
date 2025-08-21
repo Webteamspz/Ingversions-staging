@@ -17,7 +17,7 @@ const TeamAreaTwo = () => {
       designation: "CEO Kawasaki Inc.",
     },
     {
-      src: "/img/team/inner_team03.jpg",
+      src: "/img/team/Picture1.png",
       url: "/team-details",
       title: "Tiana Dokidis",
       designation: "CEO Kawasaki Inc.",

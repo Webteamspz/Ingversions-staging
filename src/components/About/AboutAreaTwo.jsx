@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useParallax } from "react-scroll-parallax";
 
 const AboutAreaTwo = ({ columns, shapes }) => {

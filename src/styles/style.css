@@ -3602,7 +3602,11 @@ html {
 .team-active [class*="col-"] {
   padding: 0 15px;
 }
-
+.team-area-two img[src*="Picture2.png"] {
+  width: 410px;
+  height: 481px;
+  object-fit: cover;
+}
 /*=============================
 	18. Community
 ===============================*/
@@ -5666,7 +5670,8 @@ html {
   color: #1e1e1e;
   opacity: 0.7;
   text-transform: capitalize;
-  width: 80%;
+  width: 100%;
+  font-size: 15px;
 }
 /* Make sure the Swiper container has a height */
 .work-swiper {

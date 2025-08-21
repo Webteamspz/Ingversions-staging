@@ -1,51 +1,80 @@
 [
-    {
-      "id": "1",
-      "url": "/portfolio/1",
-      "title": "Alena Rosser",
-      "designation": "CEO Kawasaki Inc.",
-      "src": "/Ingversions-staging/img/team/inner_team01.jpg",
-      "devFile": "Devs"
-    },
-    {
-      "id": "2",
-      "url": "/portfolio/2",
-      "title": "Writwik",
-      "designation": "CTO Kawasaki Inc.",
-      "src": "/Ingversions-staging/img/team/inner_team02.jpg",
-      "devFile": "Devs2"
-    },
-    {
-      "id": "3",
-      "url": "/portfolio/3",
-      "title": "Nikita",
-      "designation": "CTO Kawasaki Inc.",
-      "src": "/Ingversions-staging/img/team/inner_team03.jpg"
-      
-    },
-    {
-      "id": "4",
-      "url": "/portfolio/4",
-      "title": "Nikita",
-      "designation": "CTO Kawasaki Inc.",
-      "src": "/Ingversions-staging/img/team/inner_team04.jpg"
-  
-    },
-    {
-      "id": "5",
-      "url": "/portfolio/5",
-      "title": "Nikita",
-      "designation": "CTO Kawasaki Inc.",
-      "src": "/Ingversions-staging/img/team/inner_team05.jpg"
-      
-    },
-    {
-      "id": "6",
-      "url": "/portfolio/6",
-      "title": "Nikita",
-      "designation": "CTO Kawasaki Inc.",
-      "src": "/Ingversions-staging/img/team/inner_team06.jpg"
-      
-    }
-  ]
-  
+  {
+    "id": "1",
+    "url": "/portfolio/1",
+    "title": "Alena Rosser",
+    "designation": "CEO Kawasaki Inc.",
+    "src": "/Ingversions-staging/img/team/inner_team01.jpg",
+    "devFile": "Devs",
+    "socials": [
+      { "icon": "fab fa-facebook-f", "link": "https://facebook.com/alena" },
+      { "icon": "fab fa-twitter", "link": "https://twitter.com/alena" },
+      { "icon": "fab fa-linkedin-in", "link": "https://linkedin.com/in/alena" },
+      { "icon": "fab fa-behance", "link": "https://behance.net/alena" }
+    ]
+  },
+  {
+    "id": "2",
+    "url": "/portfolio/2",
+    "title": "Writwik",
+    "designation": "CTO Kawasaki Inc.",
+    "src": "/Ingversions-staging/img/team/inner_team02.jpg",
+    "devFile": "Devs2",
+    "socials": [
+      { "icon": "fab fa-facebook-f", "link": "https://facebook.com/writwik" },
+      { "icon": "fab fa-twitter", "link": "https://twitter.com/writwik" },
+      { "icon": "fab fa-linkedin-in", "link": "https://linkedin.com/in/writwik" }
+    ]
+  },
+  {
+    "id": "3",
+    "url": "/portfolio/3",
+    "title": "Harsh",
+    "designation": "CTO Kawasaki Inc.",
+    "src": "/Ingversions-staging/img/team/Picture2.png",
+    "devFile": "Devs3",
+    "socials": [
+      { "icon": "fab fa-facebook-f", "link": "https://facebook.com/harsh" },
+      { "icon": "fab fa-twitter", "link": "https://twitter.com/harsh" },
+      { "icon": "fab fa-linkedin-in", "link": "https://linkedin.com/in/harsh" },
+      { "icon": "fab fa-github", "link": "https://github.com/harsh" }
+    ]
+  },
+  {
+    "id": "4",
+    "url": "/portfolio/4",
+    "title": "Nafees Hasnat",
+    "designation": "Front-End Developer",
+    "src": "/Ingversions-staging/img/team/inner_team04.jpg",
+    "devFile": "Devs4",
+    "socials": [
+      { "icon": "fab fa-facebook-f", "link": "https://facebook.com/nafees" },
+      { "icon": "fab fa-twitter", "link": "https://twitter.com/nafees" },
+      { "icon": "fab fa-linkedin-in", "link": "https://linkedin.com/in/nafees" }
+    ]
+  },
+  {
+    "id": "5",
+    "url": "/portfolio/5",
+    "title": "Nikita",
+    "designation": "CTO Kawasaki Inc.",
+    "src": "/Ingversions-staging/img/team/inner_team05.jpg",
+    "socials": [
+      { "icon": "fab fa-facebook-f", "link": "https://facebook.com/nikita" },
+      { "icon": "fab fa-twitter", "link": "https://twitter.com/nikita" },
+      { "icon": "fab fa-linkedin-in", "link": "https://linkedin.com/in/nikita" }
+    ]
+  },
+  {
+    "id": "6",
+    "url": "/portfolio/6",
+    "title": "Nikita",
+    "designation": "CTO Kawasaki Inc.",
+    "src": "/Ingversions-staging/img/team/inner_team06.jpg",
+    "socials": [
+      { "icon": "fab fa-facebook-f", "link": "https://facebook.com/nikita2" },
+      { "icon": "fab fa-twitter", "link": "https://twitter.com/nikita2" },
+      { "icon": "fab fa-linkedin-in", "link": "https://linkedin.com/in/nikita2" }
+    ]
+  }
+]
